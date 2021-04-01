@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Movimento Bebé Quentinho: Código-Fonte de C:/Users/stduser/OneDrive - Instituto Politécnico de Setúbal/LW/DocTecnica_dados/Controllers/EntregaFamiliasController.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LogoPapiNavBar.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Movimento Bebé Quentinho
+   &#160;<span id="projectnumber">versão 1</span>
+   </div>
+   <div id="projectbrief">Website e App</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_3ccf13694865e6e894d3335143a2ca51.html">stduser</a></li><li class="navelem"><a class="el" href="dir_b6c548e85b026cb675fda99e3f8824f1.html">OneDrive - Instituto Politécnico de Setúbal</a></li><li class="navelem"><a class="el" href="dir_1907d64ad11ed337bfd640befd7f847c.html">LW</a></li><li class="navelem"><a class="el" href="dir_1d7b0031a84db79acc76e167f344a318.html">DocTecnica_dados</a></li><li class="navelem"><a class="el" href="dir_d3f97abc57439b54ad19dfa39211f34b.html">Controllers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">EntregaFamiliasController.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_entrega_familias_controller_8cs.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> System.Linq;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> System.Threading.Tasks;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> Microsoft.AspNetCore.Mvc;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> Microsoft.AspNetCore.Mvc.Rendering;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> Microsoft.EntityFrameworkCore;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_m_v_c___m_b_q.html">MVC_MBQ</a>.<a class="code" href="namespace_m_v_c___m_b_q_1_1_models.html">Models</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_m_v_c___m_b_q_1_1_controllers.html">MVC_MBQ.Controllers</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html">   16</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html">EntregaFamiliasController</a> : Controller</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">   21</a></span>&#160;        <span class="keyword">private</span> readonly <a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html">AppMovimentoBQDbContext</a> <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a3f41931a117a31d11de92820eb87de94">   23</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a3f41931a117a31d11de92820eb87de94">EntregaFamiliasController</a>(<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html">AppMovimentoBQDbContext</a> context)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a> = context;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a67495009f562bf3dd6297e3d68217e3c">   32</a></span>&#160;        <span class="keyword">public</span> async Task&lt;IActionResult&gt; <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a67495009f562bf3dd6297e3d68217e3c">Index</a>()</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            var appMovimentoBQDbContext = <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html#a331012af0bc9e8f04fae2ae87778d0ae">EntregaFamilias</a>.Include(e =&gt; e.Familia);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">return</span> View(await appMovimentoBQDbContext.ToListAsync());</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a26eee58edd94e41be3df8fa56497e165">   43</a></span>&#160;        <span class="keyword">public</span> async Task&lt;IActionResult&gt; <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a26eee58edd94e41be3df8fa56497e165">Details</a>(<span class="keywordtype">int</span>? <span class="keywordtype">id</span>)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <span class="keywordflow">return</span> NotFound();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            var entregaFamilia = await <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html#a331012af0bc9e8f04fae2ae87778d0ae">EntregaFamilias</a></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                .Include(e =&gt; e.Familia)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                 .Include(d =&gt; d.ProdutosEntregues)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                .Include(<span class="stringliteral">&quot;ProdutosEntregues.Produto&quot;</span>)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                .FirstOrDefaultAsync(m =&gt; m.ID == <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">if</span> (entregaFamilia == <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="keywordflow">return</span> NotFound();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">return</span> View(entregaFamilia);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a0a58c628dc2378697583ee4118d8fd30">   70</a></span>&#160;        <span class="keyword">public</span> IActionResult <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a0a58c628dc2378697583ee4118d8fd30">Create</a>()</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            ViewData[<span class="stringliteral">&quot;FamiliaID&quot;</span>] = <span class="keyword">new</span> SelectList(<a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html#ad46d8af8618f586f9aab495967f709de">Familias</a>, <span class="stringliteral">&quot;ID&quot;</span>, <span class="stringliteral">&quot;ID&quot;</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            List&lt;Familia&gt; familias = <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html#ad46d8af8618f586f9aab495967f709de">Familias</a>.ToList();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            List&lt;Produto&gt; produtos = <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html#a86782c81c984469665d7cbd8fb9d9b28">Produtos</a>.ToList();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_entrega_familia.html">ViewModelNovaEntregaFamilia</a> viewModelNovaEntregaFamilia = <span class="keyword">new</span> <a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_entrega_familia.html">ViewModelNovaEntregaFamilia</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            viewModelNovaEntregaFamilia.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_entrega_familia.html#a34235c6fbcb949295ffd17dc4beaf290">Familias</a> = familias;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            viewModelNovaEntregaFamilia.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_entrega_familia.html#a2fd70fd3e77fc98ff8a2225a6d8bebbc">Produtos</a> = produtos;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            viewModelNovaEntregaFamilia.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_entrega_familia.html#a57335af8a4802c5c23c7fb35ea6acf4c">EntregaFamilia</a> = <span class="keyword">new</span> <a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_entrega_familia.html">EntregaFamilia</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            viewModelNovaEntregaFamilia.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_entrega_familia.html#a57335af8a4802c5c23c7fb35ea6acf4c">EntregaFamilia</a>.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_entrega_familia.html#a8fd960397b213c289cf27a7565f6ab80">ProdutosEntregues</a> = <span class="keyword">new</span> List&lt;ProdutoEntregue&gt;();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            viewModelNovaEntregaFamilia.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_entrega_familia.html#a57335af8a4802c5c23c7fb35ea6acf4c">EntregaFamilia</a>.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_entrega_familia.html#a8fd960397b213c289cf27a7565f6ab80">ProdutosEntregues</a>.Add(<span class="keyword">new</span> <a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_produto_entregue.html">ProdutoEntregue</a>());</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">return</span> View(viewModelNovaEntregaFamilia);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        [HttpPost]</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        [ValidateAntiForgeryToken]</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a69f3e1041dbaf9bd7554173cb9bd72d7">   98</a></span>&#160;        <span class="keyword">public</span> async Task&lt;IActionResult&gt; <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a69f3e1041dbaf9bd7554173cb9bd72d7">Create</a>([Bind(<span class="stringliteral">&quot;ID,DataEntrega,FamiliaID,ProdutosEntregues&quot;</span>)] <a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_entrega_familia.html">EntregaFamilia</a> entregaFamilia)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">if</span> (ModelState.IsValid)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>.Add(entregaFamilia);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                <span class="keywordflow">foreach</span> (<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_produto_entregue.html">ProdutoEntregue</a> produtoEntregue <span class="keywordflow">in</span> entregaFamilia.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_entrega_familia.html#a8fd960397b213c289cf27a7565f6ab80">ProdutosEntregues</a>)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                    <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>.Add(produtoEntregue);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                await <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>.SaveChangesAsync();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <span class="keywordflow">return</span> RedirectToAction(nameof(<a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a67495009f562bf3dd6297e3d68217e3c">Index</a>));</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            ViewData[<span class="stringliteral">&quot;FamiliaID&quot;</span>] = <span class="keyword">new</span> SelectList(<a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html#ad46d8af8618f586f9aab495967f709de">Familias</a>, <span class="stringliteral">&quot;ID&quot;</span>, <span class="stringliteral">&quot;ID&quot;</span>, entregaFamilia.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_entrega_familia.html#afccf4ca4120ccdde9740e7637ea7274e">FamiliaID</a>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordflow">return</span> View(entregaFamilia);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        [HttpPost]</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        [ValidateAntiForgeryToken]</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a50cf41d7175c0108402503e8e9698f68">  122</a></span>&#160;        <span class="keyword">public</span> IActionResult <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a50cf41d7175c0108402503e8e9698f68">AddProdutoEntregue</a>(<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_entrega_familia.html">ViewModelNovaEntregaFamilia</a> viewModelNovaEntregaFamilia)</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            List&lt;Familia&gt; familias = <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html#ad46d8af8618f586f9aab495967f709de">Familias</a>.ToList();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            List&lt;Produto&gt; produtos = <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html#a86782c81c984469665d7cbd8fb9d9b28">Produtos</a>.ToList();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            viewModelNovaEntregaFamilia.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_entrega_familia.html#a34235c6fbcb949295ffd17dc4beaf290">Familias</a> = familias;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            viewModelNovaEntregaFamilia.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_entrega_familia.html#a2fd70fd3e77fc98ff8a2225a6d8bebbc">Produtos</a> = produtos;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            viewModelNovaEntregaFamilia.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_entrega_familia.html#a57335af8a4802c5c23c7fb35ea6acf4c">EntregaFamilia</a>.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_entrega_familia.html#a8fd960397b213c289cf27a7565f6ab80">ProdutosEntregues</a>.Add(<span class="keyword">new</span> <a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_produto_entregue.html">ProdutoEntregue</a>());</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keywordflow">return</span> View(<span class="stringliteral">&quot;Create&quot;</span>, viewModelNovaEntregaFamilia);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a4c5fefeca2287df4f869c5c7bd688cde">  141</a></span>&#160;        <span class="keyword">public</span> async Task&lt;IActionResult&gt; <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a4c5fefeca2287df4f869c5c7bd688cde">Edit</a>(<span class="keywordtype">int</span>? <span class="keywordtype">id</span>)</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        {</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                <span class="keywordflow">return</span> NotFound();</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            var entregaFamilia = await <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html#a331012af0bc9e8f04fae2ae87778d0ae">EntregaFamilias</a>.FindAsync(<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">if</span> (entregaFamilia == <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                <span class="keywordflow">return</span> NotFound();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            ViewData[<span class="stringliteral">&quot;FamiliaID&quot;</span>] = <span class="keyword">new</span> SelectList(<a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html#ad46d8af8618f586f9aab495967f709de">Familias</a>, <span class="stringliteral">&quot;ID&quot;</span>, <span class="stringliteral">&quot;Nome&quot;</span>, entregaFamilia.FamiliaID);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keywordflow">return</span> View(entregaFamilia);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        [HttpPost]</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        [ValidateAntiForgeryToken]</div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a994015c917786299701c6b7888b84f0c">  168</a></span>&#160;        <span class="keyword">public</span> async Task&lt;IActionResult&gt; <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a994015c917786299701c6b7888b84f0c">Edit</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, [Bind(<span class="stringliteral">&quot;ID,DataEntrega,FamiliaID&quot;</span>)] <a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_entrega_familia.html">EntregaFamilia</a> entregaFamilia)</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keywordflow">if</span> (<span class="keywordtype">id</span> != entregaFamilia.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_entrega_familia.html#ae1b27ca84aaaf42c8582bc7de18c05e4">ID</a>)</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                <span class="keywordflow">return</span> NotFound();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keywordflow">if</span> (ModelState.IsValid)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                    <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>.Update(entregaFamilia);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                    await <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>.SaveChangesAsync();</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                <span class="keywordflow">catch</span> (DbUpdateConcurrencyException)</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                    <span class="keywordflow">if</span> (!<a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a92dd0c7b36f45a7421738f33a66db300">EntregaFamiliaExists</a>(entregaFamilia.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_entrega_familia.html#ae1b27ca84aaaf42c8582bc7de18c05e4">ID</a>))</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                    {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                        <span class="keywordflow">return</span> NotFound();</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                    }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                    {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                        <span class="keywordflow">throw</span>;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                    }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                }</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                <span class="keywordflow">return</span> RedirectToAction(nameof(<a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a67495009f562bf3dd6297e3d68217e3c">Index</a>));</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            ViewData[<span class="stringliteral">&quot;FamiliaID&quot;</span>] = <span class="keyword">new</span> SelectList(<a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html#ad46d8af8618f586f9aab495967f709de">Familias</a>, <span class="stringliteral">&quot;ID&quot;</span>, <span class="stringliteral">&quot;Nome&quot;</span>, entregaFamilia.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_entrega_familia.html#afccf4ca4120ccdde9740e7637ea7274e">FamiliaID</a>);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="keywordflow">return</span> View(entregaFamilia);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        }</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a9c464dfe65660391d06bcfe29f885c06">  204</a></span>&#160;        <span class="keyword">public</span> async Task&lt;IActionResult&gt; <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a9c464dfe65660391d06bcfe29f885c06">Delete</a>(<span class="keywordtype">int</span>? <span class="keywordtype">id</span>)</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                <span class="keywordflow">return</span> NotFound();</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            var entregaFamilia = await <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html#a331012af0bc9e8f04fae2ae87778d0ae">EntregaFamilias</a></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                .Include(e =&gt; e.Familia)</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                .FirstOrDefaultAsync(m =&gt; m.ID == <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            <span class="keywordflow">if</span> (entregaFamilia == <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                <span class="keywordflow">return</span> NotFound();</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            <span class="keywordflow">return</span> View(entregaFamilia);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        }</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        [HttpPost, ActionName(<span class="stringliteral">&quot;Delete&quot;</span>)]</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        [ValidateAntiForgeryToken]</div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a9e84e62f334a81e7c98d4e1fbdf5c453">  229</a></span>&#160;        <span class="keyword">public</span> async Task&lt;IActionResult&gt; <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a9e84e62f334a81e7c98d4e1fbdf5c453">DeleteConfirmed</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            var entregaFamilia = await <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html#a331012af0bc9e8f04fae2ae87778d0ae">EntregaFamilias</a>.FindAsync(<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html#a331012af0bc9e8f04fae2ae87778d0ae">EntregaFamilias</a>.Remove(entregaFamilia);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            await <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>.SaveChangesAsync();</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            <span class="keywordflow">return</span> RedirectToAction(nameof(<a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a67495009f562bf3dd6297e3d68217e3c">Index</a>));</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        }</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a92dd0c7b36f45a7421738f33a66db300">  237</a></span>&#160;        <span class="keyword">private</span> <span class="keywordtype">bool</span> <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a92dd0c7b36f45a7421738f33a66db300">EntregaFamiliaExists</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        {</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">_context</a>.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html#a331012af0bc9e8f04fae2ae87778d0ae">EntregaFamilias</a>.Any(e =&gt; e.ID == <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        }</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    }</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;}</div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller_html"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html">MVC_MBQ.Controllers.EntregaFamiliasController</a></div><div class="ttdoc">Controller relativo ao Modelo EntregaFamilia. Fornece/Implementa todos os métodos relativos a acções ...</div><div class="ttdef"><b>Definition:</b> <a href="_entrega_familias_controller_8cs_source.html#l00016">EntregaFamiliasController.cs:17</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller_html_a0a58c628dc2378697583ee4118d8fd30"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a0a58c628dc2378697583ee4118d8fd30">MVC_MBQ.Controllers.EntregaFamiliasController.Create</a></div><div class="ttdeci">IActionResult Create()</div><div class="ttdoc">Método que devolve a view Create do modelo EntregaFamilia com objeto viewModelNovaEntregaFamilia....</div><div class="ttdef"><b>Definition:</b> <a href="_entrega_familias_controller_8cs_source.html#l00070">EntregaFamiliasController.cs:70</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller_html_a26eee58edd94e41be3df8fa56497e165"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a26eee58edd94e41be3df8fa56497e165">MVC_MBQ.Controllers.EntregaFamiliasController.Details</a></div><div class="ttdeci">async Task&lt; IActionResult &gt; Details(int? id)</div><div class="ttdef"><b>Definition:</b> <a href="_entrega_familias_controller_8cs_source.html#l00043">EntregaFamiliasController.cs:43</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller_html_a3f41931a117a31d11de92820eb87de94"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a3f41931a117a31d11de92820eb87de94">MVC_MBQ.Controllers.EntregaFamiliasController.EntregaFamiliasController</a></div><div class="ttdeci">EntregaFamiliasController(AppMovimentoBQDbContext context)</div><div class="ttdef"><b>Definition:</b> <a href="_entrega_familias_controller_8cs_source.html#l00023">EntregaFamiliasController.cs:23</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller_html_a4c5fefeca2287df4f869c5c7bd688cde"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a4c5fefeca2287df4f869c5c7bd688cde">MVC_MBQ.Controllers.EntregaFamiliasController.Edit</a></div><div class="ttdeci">async Task&lt; IActionResult &gt; Edit(int? id)</div><div class="ttdoc">Método que devolve a view Editar do objeto seleccionado da classe EntregaFamilia que se encontra em B...</div><div class="ttdef"><b>Definition:</b> <a href="_entrega_familias_controller_8cs_source.html#l00141">EntregaFamiliasController.cs:141</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller_html_a50cf41d7175c0108402503e8e9698f68"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a50cf41d7175c0108402503e8e9698f68">MVC_MBQ.Controllers.EntregaFamiliasController.AddProdutoEntregue</a></div><div class="ttdeci">IActionResult AddProdutoEntregue(ViewModelNovaEntregaFamilia viewModelNovaEntregaFamilia)</div><div class="ttdoc">Método que atribui ao viewModelNovaEntregaFamilia os dados da BD de Famílias e Produtos Instancia e a...</div><div class="ttdef"><b>Definition:</b> <a href="_entrega_familias_controller_8cs_source.html#l00122">EntregaFamiliasController.cs:122</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller_html_a67495009f562bf3dd6297e3d68217e3c"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a67495009f562bf3dd6297e3d68217e3c">MVC_MBQ.Controllers.EntregaFamiliasController.Index</a></div><div class="ttdeci">async Task&lt; IActionResult &gt; Index()</div><div class="ttdoc">Método da view Index referente ao modelo EntregaFamilia</div><div class="ttdef"><b>Definition:</b> <a href="_entrega_familias_controller_8cs_source.html#l00032">EntregaFamiliasController.cs:32</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller_html_a69f3e1041dbaf9bd7554173cb9bd72d7"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a69f3e1041dbaf9bd7554173cb9bd72d7">MVC_MBQ.Controllers.EntregaFamiliasController.Create</a></div><div class="ttdeci">async Task&lt; IActionResult &gt; Create([Bind(&quot;ID,DataEntrega,FamiliaID,ProdutosEntregues&quot;)] EntregaFamilia entregaFamilia)</div><div class="ttdoc">POST: Categorias/Create Método que adiciona objeto EntregaFamilia e objetos ProdutoEntregue criados à...</div><div class="ttdef"><b>Definition:</b> <a href="_entrega_familias_controller_8cs_source.html#l00098">EntregaFamiliasController.cs:98</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller_html_a92dd0c7b36f45a7421738f33a66db300"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a92dd0c7b36f45a7421738f33a66db300">MVC_MBQ.Controllers.EntregaFamiliasController.EntregaFamiliaExists</a></div><div class="ttdeci">bool EntregaFamiliaExists(int id)</div><div class="ttdef"><b>Definition:</b> <a href="_entrega_familias_controller_8cs_source.html#l00237">EntregaFamiliasController.cs:237</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller_html_a994015c917786299701c6b7888b84f0c"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a994015c917786299701c6b7888b84f0c">MVC_MBQ.Controllers.EntregaFamiliasController.Edit</a></div><div class="ttdeci">async Task&lt; IActionResult &gt; Edit(int id, [Bind(&quot;ID,DataEntrega,FamiliaID&quot;)] EntregaFamilia entregaFamilia)</div><div class="ttdoc">POST: Categorias/Edit Método que edita objeto do tipo EntregaFamilia que se encontra na BD e atualiza...</div><div class="ttdef"><b>Definition:</b> <a href="_entrega_familias_controller_8cs_source.html#l00168">EntregaFamiliasController.cs:168</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller_html_a9c464dfe65660391d06bcfe29f885c06"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a9c464dfe65660391d06bcfe29f885c06">MVC_MBQ.Controllers.EntregaFamiliasController.Delete</a></div><div class="ttdeci">async Task&lt; IActionResult &gt; Delete(int? id)</div><div class="ttdoc">Método que devolve a view Delete com objeto da classe EntregaFamilia selecionado e que se encontra gu...</div><div class="ttdef"><b>Definition:</b> <a href="_entrega_familias_controller_8cs_source.html#l00204">EntregaFamiliasController.cs:204</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller_html_a9e84e62f334a81e7c98d4e1fbdf5c453"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#a9e84e62f334a81e7c98d4e1fbdf5c453">MVC_MBQ.Controllers.EntregaFamiliasController.DeleteConfirmed</a></div><div class="ttdeci">async Task&lt; IActionResult &gt; DeleteConfirmed(int id)</div><div class="ttdoc">Método que apaga objeto selecionado e atualiza a BD</div><div class="ttdef"><b>Definition:</b> <a href="_entrega_familias_controller_8cs_source.html#l00229">EntregaFamiliasController.cs:229</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller_html_afc38725ddbab8959fbe49c02302a995f"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller.html#afc38725ddbab8959fbe49c02302a995f">MVC_MBQ.Controllers.EntregaFamiliasController._context</a></div><div class="ttdeci">readonly AppMovimentoBQDbContext _context</div><div class="ttdoc">Método que cria variável local com atribuição do objeto da classe AppMovimentoBDQContext</div><div class="ttdef"><b>Definition:</b> <a href="_entrega_familias_controller_8cs_source.html#l00021">EntregaFamiliasController.cs:21</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_html"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html">MVC_MBQ.Models.AppMovimentoBQDbContext</a></div><div class="ttdoc">Classe AppMovimentoBQDbContext que herda da classe DbContext. Permite Mapear a BD</div><div class="ttdef"><b>Definition:</b> <a href="_app_movimento_b_q_db_context_8cs_source.html#l00012">AppMovimentoBQDbContext.cs:13</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_html_a331012af0bc9e8f04fae2ae87778d0ae"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html#a331012af0bc9e8f04fae2ae87778d0ae">MVC_MBQ.Models.AppMovimentoBQDbContext.EntregaFamilias</a></div><div class="ttdeci">DbSet&lt; EntregaFamilia &gt; EntregaFamilias</div><div class="ttdef"><b>Definition:</b> <a href="_app_movimento_b_q_db_context_8cs_source.html#l00063">AppMovimentoBQDbContext.cs:63</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_html_a86782c81c984469665d7cbd8fb9d9b28"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html#a86782c81c984469665d7cbd8fb9d9b28">MVC_MBQ.Models.AppMovimentoBQDbContext.Produtos</a></div><div class="ttdeci">DbSet&lt; Produto &gt; Produtos</div><div class="ttdef"><b>Definition:</b> <a href="_app_movimento_b_q_db_context_8cs_source.html#l00043">AppMovimentoBQDbContext.cs:43</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_html_ad46d8af8618f586f9aab495967f709de"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html#ad46d8af8618f586f9aab495967f709de">MVC_MBQ.Models.AppMovimentoBQDbContext.Familias</a></div><div class="ttdeci">DbSet&lt; Familia &gt; Familias</div><div class="ttdef"><b>Definition:</b> <a href="_app_movimento_b_q_db_context_8cs_source.html#l00039">AppMovimentoBQDbContext.cs:39</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_models_1_1_entrega_familia_html"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_models_1_1_entrega_familia.html">MVC_MBQ.Models.EntregaFamilia</a></div><div class="ttdoc">Classe Entrega a Famílias</div><div class="ttdef"><b>Definition:</b> <a href="_entrega_familia_8cs_source.html#l00013">EntregaFamilia.cs:14</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_models_1_1_entrega_familia_html_a8fd960397b213c289cf27a7565f6ab80"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_models_1_1_entrega_familia.html#a8fd960397b213c289cf27a7565f6ab80">MVC_MBQ.Models.EntregaFamilia.ProdutosEntregues</a></div><div class="ttdeci">virtual List&lt; ProdutoEntregue &gt; ProdutosEntregues</div><div class="ttdef"><b>Definition:</b> <a href="_entrega_familia_8cs_source.html#l00036">EntregaFamilia.cs:36</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_models_1_1_entrega_familia_html_ae1b27ca84aaaf42c8582bc7de18c05e4"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_models_1_1_entrega_familia.html#ae1b27ca84aaaf42c8582bc7de18c05e4">MVC_MBQ.Models.EntregaFamilia.ID</a></div><div class="ttdeci">int ID</div><div class="ttdef"><b>Definition:</b> <a href="_entrega_familia_8cs_source.html#l00019">EntregaFamilia.cs:19</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_models_1_1_entrega_familia_html_afccf4ca4120ccdde9740e7637ea7274e"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_models_1_1_entrega_familia.html#afccf4ca4120ccdde9740e7637ea7274e">MVC_MBQ.Models.EntregaFamilia.FamiliaID</a></div><div class="ttdeci">int FamiliaID</div><div class="ttdef"><b>Definition:</b> <a href="_entrega_familia_8cs_source.html#l00028">EntregaFamilia.cs:28</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_models_1_1_produto_entregue_html"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_models_1_1_produto_entregue.html">MVC_MBQ.Models.ProdutoEntregue</a></div><div class="ttdoc">Classe de Produtos Entregues</div><div class="ttdef"><b>Definition:</b> <a href="_produto_entregue_8cs_source.html#l00013">ProdutoEntregue.cs:14</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_entrega_familia_html"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_entrega_familia.html">MVC_MBQ.Models.ViewModelNovaEntregaFamilia</a></div><div class="ttdoc">Classe ViewModelNovaEntregaFamilia com Entrega a Familia, Lista de Famílias e Lista de Produtos.</div><div class="ttdef"><b>Definition:</b> <a href="_view_model_nova_entrega_familia_8cs_source.html#l00012">ViewModelNovaEntregaFamilia.cs:14</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_entrega_familia_html_a2fd70fd3e77fc98ff8a2225a6d8bebbc"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_entrega_familia.html#a2fd70fd3e77fc98ff8a2225a6d8bebbc">MVC_MBQ.Models.ViewModelNovaEntregaFamilia.Produtos</a></div><div class="ttdeci">List&lt; Produto &gt; Produtos</div><div class="ttdef"><b>Definition:</b> <a href="_view_model_nova_entrega_familia_8cs_source.html#l00026">ViewModelNovaEntregaFamilia.cs:26</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_entrega_familia_html_a34235c6fbcb949295ffd17dc4beaf290"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_entrega_familia.html#a34235c6fbcb949295ffd17dc4beaf290">MVC_MBQ.Models.ViewModelNovaEntregaFamilia.Familias</a></div><div class="ttdeci">List&lt; Familia &gt; Familias</div><div class="ttdef"><b>Definition:</b> <a href="_view_model_nova_entrega_familia_8cs_source.html#l00022">ViewModelNovaEntregaFamilia.cs:22</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_entrega_familia_html_a57335af8a4802c5c23c7fb35ea6acf4c"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_entrega_familia.html#a57335af8a4802c5c23c7fb35ea6acf4c">MVC_MBQ.Models.ViewModelNovaEntregaFamilia.EntregaFamilia</a></div><div class="ttdeci">EntregaFamilia EntregaFamilia</div><div class="ttdef"><b>Definition:</b> <a href="_view_model_nova_entrega_familia_8cs_source.html#l00018">ViewModelNovaEntregaFamilia.cs:18</a></div></div>
+<div class="ttc" id="anamespace_m_v_c___m_b_q_1_1_controllers_html"><div class="ttname"><a href="namespace_m_v_c___m_b_q_1_1_controllers.html">MVC_MBQ.Controllers</a></div><div class="ttdef"><b>Definition:</b> <a href="_account_controller_8cs_source.html#l00010">AccountController.cs:11</a></div></div>
+<div class="ttc" id="anamespace_m_v_c___m_b_q_1_1_models_html"><div class="ttname"><a href="namespace_m_v_c___m_b_q_1_1_models.html">MVC_MBQ.Models</a></div><div class="ttdef"><b>Definition:</b> <a href="_app_identity_db_context_8cs_source.html#l00005">AppIdentityDbContext.cs:6</a></div></div>
+<div class="ttc" id="anamespace_m_v_c___m_b_q_html"><div class="ttname"><a href="namespace_m_v_c___m_b_q.html">MVC_MBQ</a></div><div class="ttdef"><b>Definition:</b> <a href="_account_controller_8cs_source.html#l00010">AccountController.cs:11</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
+</small></address>
+</body>
+</html>

@@ -1,0 +1,14 @@
+var searchData=
+[
+  ['datadoacao_432',['DataDoacao',['../class_m_v_c___m_b_q_1_1_models_1_1_doacao.html#a66e0a41aa4d2ff6993e6a49c07dc0078',1,'MVC_MBQ::Models::Doacao']]],
+  ['dataentrega_433',['DataEntrega',['../class_m_v_c___m_b_q_1_1_models_1_1_entrega_familia.html#a7a606fabbf57fb26c88457b87c7e27b9',1,'MVC_MBQ::Models::EntregaFamilia']]],
+  ['dataevento_434',['DataEvento',['../class_m_v_c___m_b_q_1_1_models_1_1_evento.html#ac0118d90123ff312a5623da31ad3200d',1,'MVC_MBQ::Models::Evento']]],
+  ['datainscrição_435',['DataInscrição',['../class_m_v_c___m_b_q_1_1_models_1_1_inscricao.html#ad9a6ed0d1a89bb01eb7e44249f53d761',1,'MVC_MBQ::Models::Inscricao']]],
+  ['datanascimento_436',['DataNascimento',['../class_m_v_c___m_b_q_1_1_models_1_1_membro_familia.html#a7afe1f99e2b7ef908481e3634f43e79c',1,'MVC_MBQ.Models.MembroFamilia.DataNascimento()'],['../class_m_v_c___m_b_q_1_1_models_1_1_voluntario.html#a03ff6af5ebdf0683e58bc46852185c8a',1,'MVC_MBQ.Models.Voluntario.DataNascimento()']]],
+  ['deleteids_437',['DeleteIds',['../class_m_v_c___m_b_q_1_1_models_1_1_role_modification.html#ab69c58c7c40b38c7be9f3800ce90c93d',1,'MVC_MBQ::Models::RoleModification']]],
+  ['descricao_438',['Descricao',['../class_m_v_c___m_b_q_1_1_models_1_1_evento.html#a9a60e88639dc155026432dc5d2c142f4',1,'MVC_MBQ.Models.Evento.Descricao()'],['../class_m_v_c___m_b_q_1_1_models_1_1_membro_familia.html#af5dcdf93ad71c29187223397c987f55f',1,'MVC_MBQ.Models.MembroFamilia.Descricao()'],['../class_m_v_c___m_b_q_1_1_models_1_1_voluntario.html#a8686d9cad87ea6cfbb0a09f414f109a8',1,'MVC_MBQ.Models.Voluntario.Descricao()']]],
+  ['distrito_439',['Distrito',['../class_m_v_c___m_b_q_1_1_models_1_1_membro_familia.html#a541bf6d41bc0a717ebb13ca50ae1c10c',1,'MVC_MBQ.Models.MembroFamilia.Distrito()'],['../class_m_v_c___m_b_q_1_1_models_1_1_voluntario.html#af03457b7935389ae90a1aed350199e1c',1,'MVC_MBQ.Models.Voluntario.Distrito()']]],
+  ['doacao_440',['Doacao',['../class_m_v_c___m_b_q_1_1_models_1_1_produto_doado.html#a9d0c5f0ab190d66fd7b85ea10d8ea7a5',1,'MVC_MBQ.Models.ProdutoDoado.Doacao()'],['../class_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_doacao.html#a5b5c3da4e0159c8c53cf94f015b5d864',1,'MVC_MBQ.Models.ViewModelNovaDoacao.Doacao()']]],
+  ['doacaoid_441',['DoacaoID',['../class_m_v_c___m_b_q_1_1_models_1_1_produto_doado.html#ac928767755ef8ea9944c1608321233d0',1,'MVC_MBQ::Models::ProdutoDoado']]],
+  ['doacoes_442',['Doacoes',['../class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context.html#a7df06cff39c638bd08a52719b29d7f27',1,'MVC_MBQ.Models.AppMovimentoBQDbContext.Doacoes()'],['../class_m_v_c___m_b_q_1_1_models_1_1_evento.html#a477f3786272d5200308b83c656ad095f',1,'MVC_MBQ.Models.Evento.Doacoes()'],['../class_m_v_c___m_b_q_1_1_models_1_1_voluntario.html#ad504c75f4f5242b5865a7cf67d3f77fc',1,'MVC_MBQ.Models.Voluntario.Doacoes()']]]
+];
