@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Movimento Bebé Quentinho: Código-Fonte de C:/Users/stduser/OneDrive - Instituto Politécnico de Setúbal/LW/DocTecnica/Controllers/OQueDoarController.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LogoPapiNavBar.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Movimento Bebé Quentinho
+   &#160;<span id="projectnumber">versão 1</span>
+   </div>
+   <div id="projectbrief">Website e App</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_3ccf13694865e6e894d3335143a2ca51.html">stduser</a></li><li class="navelem"><a class="el" href="dir_b6c548e85b026cb675fda99e3f8824f1.html">OneDrive - Instituto Politécnico de Setúbal</a></li><li class="navelem"><a class="el" href="dir_1907d64ad11ed337bfd640befd7f847c.html">LW</a></li><li class="navelem"><a class="el" href="dir_f50f4cdcde5b4670631a2edbe2bf46e8.html">DocTecnica</a></li><li class="navelem"><a class="el" href="dir_f0a43f8ae12f94b63574a45c08517906.html">Controllers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">OQueDoarController.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_o_que_doar_controller_8cs.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> Microsoft.AspNetCore.Mvc;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> Microsoft.Extensions.Configuration;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> Microsoft.Extensions.Logging;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_m_v_c___m_b_q.html">MVC_MBQ</a>.Data;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_m_v_c___m_b_q.html">MVC_MBQ</a>.<a class="code" href="namespace_m_v_c___m_b_q_1_1_models.html">Models</a>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> System.Diagnostics;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using</span> System.Linq;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using</span> System.Net;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using</span> System.Net.Mail;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using</span> System.Threading.Tasks;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_m_v_c___m_b_q_1_1_controllers.html">MVC_MBQ.Controllers</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html">   19</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html">OQueDoarController</a> : Controller</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html#a2b78f03f55cd8b40f1fe7b004475f2cb">   24</a></span>&#160;        <span class="keyword">private</span> readonly IConfiguration <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html#a2b78f03f55cd8b40f1fe7b004475f2cb">_configuration</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html#aa820d2aceb23488e63c4f713d8a2e4f4">   26</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html#aa820d2aceb23488e63c4f713d8a2e4f4">OQueDoarController</a>(IConfiguration configuration)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html#a2b78f03f55cd8b40f1fe7b004475f2cb">_configuration</a> = configuration;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html#a9b301489253094c73509db3084fbe97e">   34</a></span>&#160;        <span class="keyword">public</span> IActionResult <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html#a9b301489253094c73509db3084fbe97e">Index</a>()</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordflow">return</span> View();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html#a699f2e00cf916949840030e4a96483fa">   42</a></span>&#160;        <span class="keyword">public</span> IActionResult <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html#a699f2e00cf916949840030e4a96483fa">OQueDoar</a>()</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">return</span> View();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        [HttpPost]</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        [ValidateAntiForgeryToken]</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html#a6af4d74b6525d668be966ac8ee5af9ee">   53</a></span>&#160;        <span class="keyword">public</span> async Task&lt;ActionResult&gt; <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html#a6af4d74b6525d668be966ac8ee5af9ee">OQueDoar</a>(<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_email_form_model.html">EmailFormModel</a> model)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">if</span> (ModelState.IsValid)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                var email = model.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_newsletter.html#a826f7e8ed64e8e3b98b630ca46ed6b1d">Email</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                var body = <span class="stringliteral">&quot;&lt;p&gt;Email From: {0} ({1})&lt;/p&gt;&lt;p&gt;Assunto: O que Doar?&lt;/p&gt;&lt;p&gt;Message:&lt;/p&gt;&lt;p&gt;{2}&lt;/p&gt;&quot;</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                var message = <span class="keyword">new</span> MailMessage();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    message.To.Add(<span class="keyword">new</span> MailAddress(model.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_email_form_model.html#a7f5e6091b38330e3edd3fecd131a54c3">FromEmail</a>));</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                    message.Bcc.Add(<span class="keyword">new</span> MailAddress(<span class="stringliteral">&quot;quentinhopapi@gmail.com&quot;</span>));  <span class="comment">// replace with valid value </span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                message.From = <span class="keyword">new</span> MailAddress(<span class="stringliteral">&quot;quentinhopapi@gmail.com&quot;</span>);  <span class="comment">// replace with valid value</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                message.Subject = model.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_email_form_model.html#a5f4f20ee8719ecf943d56b7a0a99305f">Subject</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                message.Body = <span class="keywordtype">string</span>.Format(body, model.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_email_form_model.html#a47feab6ec9802b6c099ffd0398734d13">FromName</a>, model.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_email_form_model.html#a7f5e6091b38330e3edd3fecd131a54c3">FromEmail</a>, model.<a class="code" href="class_m_v_c___m_b_q_1_1_models_1_1_email_form_model.html#a574fd51563d61eb7b54d1e322ae812f1">Message</a>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                message.IsBodyHtml = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <span class="keyword">using</span> (var smtp = <span class="keyword">new</span> SmtpClient())</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    var credential = <span class="keyword">new</span> NetworkCredential</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                        UserName = <span class="stringliteral">&quot;quentinhopapi@gmail.com&quot;</span>,  <span class="comment">// replace with valid value</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                        Password = <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html#a2b78f03f55cd8b40f1fe7b004475f2cb">_configuration</a>[<span class="stringliteral">&quot;PasswordEmail&quot;</span>] <span class="comment">// replace with valid value</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                    };</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                    smtp.Credentials = credential;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                    smtp.Host = <span class="stringliteral">&quot;   smtp.gmail.com&quot;</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                    smtp.Port = 587;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                    smtp.EnableSsl = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                    await smtp.SendMailAsync(message);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                    <span class="keywordflow">return</span> RedirectToAction(<span class="stringliteral">&quot;Sent&quot;</span>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">return</span> View(model);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html#a4182b49eafbec231548a821077f4ccb0">   92</a></span>&#160;        <span class="keyword">public</span> ActionResult <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html#a4182b49eafbec231548a821077f4ccb0">Sent</a>()</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;             <span class="keywordflow">return</span> View();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller_html"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html">MVC_MBQ.Controllers.OQueDoarController</a></div><div class="ttdoc">Controller relativo ao Modelo OQueDoar. Fornece/Implementa todos os métodos relativos a acções CRUD</div><div class="ttdef"><b>Definition:</b> <a href="_o_que_doar_controller_8cs_source.html#l00019">OQueDoarController.cs:20</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller_html_a2b78f03f55cd8b40f1fe7b004475f2cb"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html#a2b78f03f55cd8b40f1fe7b004475f2cb">MVC_MBQ.Controllers.OQueDoarController._configuration</a></div><div class="ttdeci">readonly IConfiguration _configuration</div><div class="ttdoc">Método que cria variável local com atribuição do objeto da classe IConfiguration</div><div class="ttdef"><b>Definition:</b> <a href="_o_que_doar_controller_8cs_source.html#l00024">OQueDoarController.cs:24</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller_html_a4182b49eafbec231548a821077f4ccb0"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html#a4182b49eafbec231548a821077f4ccb0">MVC_MBQ.Controllers.OQueDoarController.Sent</a></div><div class="ttdeci">ActionResult Sent()</div><div class="ttdoc">Método que confirma envio de mensagem</div><div class="ttdef"><b>Definition:</b> <a href="_o_que_doar_controller_8cs_source.html#l00092">OQueDoarController.cs:92</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller_html_a699f2e00cf916949840030e4a96483fa"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html#a699f2e00cf916949840030e4a96483fa">MVC_MBQ.Controllers.OQueDoarController.OQueDoar</a></div><div class="ttdeci">IActionResult OQueDoar()</div><div class="ttdoc">Método da view OQueDoar referente ao modelo OQueDoar</div><div class="ttdef"><b>Definition:</b> <a href="_o_que_doar_controller_8cs_source.html#l00042">OQueDoarController.cs:42</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller_html_a6af4d74b6525d668be966ac8ee5af9ee"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html#a6af4d74b6525d668be966ac8ee5af9ee">MVC_MBQ.Controllers.OQueDoarController.OQueDoar</a></div><div class="ttdeci">async Task&lt; ActionResult &gt; OQueDoar(EmailFormModel model)</div><div class="ttdoc">Método da view OQueDoar referente ao modelo EmailFormModel</div><div class="ttdef"><b>Definition:</b> <a href="_o_que_doar_controller_8cs_source.html#l00053">OQueDoarController.cs:53</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller_html_a9b301489253094c73509db3084fbe97e"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html#a9b301489253094c73509db3084fbe97e">MVC_MBQ.Controllers.OQueDoarController.Index</a></div><div class="ttdeci">IActionResult Index()</div><div class="ttdoc">Método da view Index referente ao modelo OQueDoar</div><div class="ttdef"><b>Definition:</b> <a href="_o_que_doar_controller_8cs_source.html#l00034">OQueDoarController.cs:34</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller_html_aa820d2aceb23488e63c4f713d8a2e4f4"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller.html#aa820d2aceb23488e63c4f713d8a2e4f4">MVC_MBQ.Controllers.OQueDoarController.OQueDoarController</a></div><div class="ttdeci">OQueDoarController(IConfiguration configuration)</div><div class="ttdef"><b>Definition:</b> <a href="_o_que_doar_controller_8cs_source.html#l00026">OQueDoarController.cs:26</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_models_1_1_email_form_model_html"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_models_1_1_email_form_model.html">MVC_MBQ.Models.EmailFormModel</a></div><div class="ttdoc">Classe EmailFormModel que herda de classe Newsletter</div><div class="ttdef"><b>Definition:</b> <a href="_email_form_model_8cs_source.html#l00012">EmailFormModel.cs:13</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_models_1_1_email_form_model_html_a47feab6ec9802b6c099ffd0398734d13"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_models_1_1_email_form_model.html#a47feab6ec9802b6c099ffd0398734d13">MVC_MBQ.Models.EmailFormModel.FromName</a></div><div class="ttdeci">string FromName</div><div class="ttdef"><b>Definition:</b> <a href="_email_form_model_8cs_source.html#l00023">EmailFormModel.cs:23</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_models_1_1_email_form_model_html_a574fd51563d61eb7b54d1e322ae812f1"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_models_1_1_email_form_model.html#a574fd51563d61eb7b54d1e322ae812f1">MVC_MBQ.Models.EmailFormModel.Message</a></div><div class="ttdeci">string Message</div><div class="ttdef"><b>Definition:</b> <a href="_email_form_model_8cs_source.html#l00033">EmailFormModel.cs:33</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_models_1_1_email_form_model_html_a5f4f20ee8719ecf943d56b7a0a99305f"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_models_1_1_email_form_model.html#a5f4f20ee8719ecf943d56b7a0a99305f">MVC_MBQ.Models.EmailFormModel.Subject</a></div><div class="ttdeci">string Subject</div><div class="ttdef"><b>Definition:</b> <a href="_email_form_model_8cs_source.html#l00018">EmailFormModel.cs:18</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_models_1_1_email_form_model_html_a7f5e6091b38330e3edd3fecd131a54c3"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_models_1_1_email_form_model.html#a7f5e6091b38330e3edd3fecd131a54c3">MVC_MBQ.Models.EmailFormModel.FromEmail</a></div><div class="ttdeci">string FromEmail</div><div class="ttdef"><b>Definition:</b> <a href="_email_form_model_8cs_source.html#l00028">EmailFormModel.cs:28</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_models_1_1_newsletter_html_a826f7e8ed64e8e3b98b630ca46ed6b1d"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_models_1_1_newsletter.html#a826f7e8ed64e8e3b98b630ca46ed6b1d">MVC_MBQ.Models.Newsletter.Email</a></div><div class="ttdeci">string Email</div><div class="ttdef"><b>Definition:</b> <a href="_newsletter_8cs_source.html#l00026">Newsletter.cs:26</a></div></div>
+<div class="ttc" id="anamespace_m_v_c___m_b_q_1_1_controllers_html"><div class="ttname"><a href="namespace_m_v_c___m_b_q_1_1_controllers.html">MVC_MBQ.Controllers</a></div><div class="ttdef"><b>Definition:</b> <a href="_account_controller_8cs_source.html#l00010">AccountController.cs:11</a></div></div>
+<div class="ttc" id="anamespace_m_v_c___m_b_q_1_1_models_html"><div class="ttname"><a href="namespace_m_v_c___m_b_q_1_1_models.html">MVC_MBQ.Models</a></div><div class="ttdef"><b>Definition:</b> <a href="_app_identity_db_context_8cs_source.html#l00005">AppIdentityDbContext.cs:6</a></div></div>
+<div class="ttc" id="anamespace_m_v_c___m_b_q_html"><div class="ttname"><a href="namespace_m_v_c___m_b_q.html">MVC_MBQ</a></div><div class="ttdef"><b>Definition:</b> <a href="_account_controller_8cs_source.html#l00010">AccountController.cs:11</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
+</small></address>
+</body>
+</html>
