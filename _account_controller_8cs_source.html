@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Movimento Bebé Quentinho: Código-Fonte de C:/Users/stduser/OneDrive - Instituto Politécnico de Setúbal/LW/DocTecnica/Controllers/AccountController.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="LogoPapiNavBar.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Movimento Bebé Quentinho
+   &#160;<span id="projectnumber">versão 1</span>
+   </div>
+   <div id="projectbrief">Website e App</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_3ccf13694865e6e894d3335143a2ca51.html">stduser</a></li><li class="navelem"><a class="el" href="dir_b6c548e85b026cb675fda99e3f8824f1.html">OneDrive - Instituto Politécnico de Setúbal</a></li><li class="navelem"><a class="el" href="dir_1907d64ad11ed337bfd640befd7f847c.html">LW</a></li><li class="navelem"><a class="el" href="dir_f50f4cdcde5b4670631a2edbe2bf46e8.html">DocTecnica</a></li><li class="navelem"><a class="el" href="dir_f0a43f8ae12f94b63574a45c08517906.html">Controllers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">AccountController.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_account_controller_8cs.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> Microsoft.AspNetCore.Authentication;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> Microsoft.AspNetCore.Authentication.Cookies;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> Microsoft.AspNetCore.Authentication.Facebook;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> Microsoft.AspNetCore.Mvc;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> System.Linq;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using</span> System.Threading.Tasks;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="namespace_m_v_c___m_b_q_1_1_controllers.html">   10</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_m_v_c___m_b_q_1_1_controllers.html">MVC_MBQ.Controllers</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_account_controller.html">   16</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_account_controller.html">AccountController</a> : Controller</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        [Route(<span class="stringliteral">&quot;facebook-login&quot;</span>)]</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_account_controller.html#ad29f59dfb7aaaadec2af11cdf6d00619">   23</a></span>&#160;        <span class="keyword">public</span> IActionResult <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_account_controller.html#ad29f59dfb7aaaadec2af11cdf6d00619">FacebookLogin</a>()</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            var properties = <span class="keyword">new</span> AuthenticationProperties { RedirectUri = Url.Action(<span class="stringliteral">&quot;FacebookResponse&quot;</span>) };</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordflow">return</span> Challenge(properties, FacebookDefaults.AuthenticationScheme);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        [Route(<span class="stringliteral">&quot;facebook-response&quot;</span>)]</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_m_v_c___m_b_q_1_1_controllers_1_1_account_controller.html#a86bbb054a9654a98cfd1e549502e8807">   33</a></span>&#160;        <span class="keyword">public</span> async Task&lt;IActionResult&gt; <a class="code" href="class_m_v_c___m_b_q_1_1_controllers_1_1_account_controller.html#a86bbb054a9654a98cfd1e549502e8807">FacebookResponse</a>()</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            var result = await HttpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            var claims = result.Principal.Identities</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                .FirstOrDefault().Claims.Select(claim =&gt; <span class="keyword">new</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                    claim.Issuer,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    claim.OriginalIssuer,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                    claim.Type,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    claim.Value</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                });</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">return</span> Json(claims);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_account_controller_html"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_account_controller.html">MVC_MBQ.Controllers.AccountController</a></div><div class="ttdoc">Controller relativo à autenticação através de facebook. Fornece/Implementa todos os métodos relativos...</div><div class="ttdef"><b>Definition:</b> <a href="_account_controller_8cs_source.html#l00016">AccountController.cs:17</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_account_controller_html_a86bbb054a9654a98cfd1e549502e8807"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_account_controller.html#a86bbb054a9654a98cfd1e549502e8807">MVC_MBQ.Controllers.AccountController.FacebookResponse</a></div><div class="ttdeci">async Task&lt; IActionResult &gt; FacebookResponse()</div><div class="ttdoc">Método de resposta de Facebook após log in</div><div class="ttdef"><b>Definition:</b> <a href="_account_controller_8cs_source.html#l00033">AccountController.cs:33</a></div></div>
+<div class="ttc" id="aclass_m_v_c___m_b_q_1_1_controllers_1_1_account_controller_html_ad29f59dfb7aaaadec2af11cdf6d00619"><div class="ttname"><a href="class_m_v_c___m_b_q_1_1_controllers_1_1_account_controller.html#ad29f59dfb7aaaadec2af11cdf6d00619">MVC_MBQ.Controllers.AccountController.FacebookLogin</a></div><div class="ttdeci">IActionResult FacebookLogin()</div><div class="ttdoc">Método para fazer log in através de Facebook</div><div class="ttdef"><b>Definition:</b> <a href="_account_controller_8cs_source.html#l00023">AccountController.cs:23</a></div></div>
+<div class="ttc" id="anamespace_m_v_c___m_b_q_1_1_controllers_html"><div class="ttname"><a href="namespace_m_v_c___m_b_q_1_1_controllers.html">MVC_MBQ.Controllers</a></div><div class="ttdef"><b>Definition:</b> <a href="_account_controller_8cs_source.html#l00010">AccountController.cs:11</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.0
+</small></address>
+</body>
+</html>
