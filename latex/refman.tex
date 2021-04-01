@@ -1,0 +1,306 @@
+\let\mypdfximage\pdfximage\def\pdfximage{\immediate\mypdfximage}\documentclass[twoside]{book}
+
+%% moved from doxygen.sty due to workaround for LaTex 2019 version and unmaintained tabu package
+\usepackage{ifthen}
+\ifx\requestedLaTeXdate\undefined
+\usepackage{array}
+\else
+\usepackage{array}[=2016-10-06]
+\fi
+%%
+% Packages required by doxygen
+\usepackage{fixltx2e}
+\usepackage{doxygen}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\PassOptionsToPackage{warn}{textcomp}
+\usepackage{textcomp}
+\usepackage[nointegrals]{wasysym}
+\usepackage{ifxetex}
+
+% NLS support packages
+\usepackage[portuges]{babel}
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sectsty}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+
+% Arguments of doxygenemoji:
+% 1) ':<text>:' form of the emoji, already "LaTeX"-escaped
+% 2) file with the name of the emoji without the .png extension
+% in case image exist use this otherwise use the ':<text>:' form
+\newcommand{\doxygenemoji}[2]{%
+  \IfFileExists{./#2.png}{\raisebox{-0.1em}{\includegraphics[height=0.9em]{./#2.png}}}{#1}%
+}
+% Page & text layout
+\usepackage{geometry}
+\geometry{%
+  a4paper,%
+  top=2.5cm,%
+  bottom=2.5cm,%
+  left=2.5cm,%
+  right=2.5cm%
+}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\newcommand{\doxynormalparskip}{\setlength{\parskip}{3ex plus 2ex minus 2ex}}
+\newcommand{\doxytocparskip}{\setlength{\parskip}{1ex plus 0ex minus 0ex}}
+\doxynormalparskip
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+\makeatletter
+\newcommand\hrulefilll{\leavevmode\leaders\hrule\hskip 0pt plus 1filll\kern\z@}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\renewcommand{\footrulewidth}{0.4pt}
+%
+\fancypagestyle{fancyplain}{
+\fancyhf{}
+\fancyhead[LE, RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\fancyfoot[LO, RE]{\bfseries\scriptsize Gerado por Doxygen }
+}
+%
+\fancypagestyle{plain}{
+\fancyhf{}
+\fancyfoot[LO, RE]{\bfseries\scriptsize Gerado por Doxygen }
+\renewcommand{\headrulewidth}{0pt}}
+%
+\pagestyle{fancyplain}
+%
+\renewcommand{\chaptermark}[1]{%
+  \markboth{#1}{}%
+}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+\usepackage{newunicodechar}
+  \newunicodechar{⁻}{${}^{-}$}% Superscript minus
+  \newunicodechar{²}{${}^{2}$}% Superscript two
+  \newunicodechar{³}{${}^{3}$}% Superscript three
+
+% Hyperlinks (required, but should be loaded last)
+\ifpdf
+  \usepackage[pdftex,pagebackref=true]{hyperref}
+\else
+  \ifxetex
+    \usepackage[pagebackref=true]{hyperref}
+  \else
+    \usepackage[ps2pdf,pagebackref=true]{hyperref}
+  \fi
+\fi
+
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+  citecolor=blue,%
+  unicode%
+}
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+\usepackage{caption}
+\captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+
+\usepackage{etoc}
+\etocsettocstyle{\doxytocparskip}{\doxynormalparskip}
+\renewcommand{\numberline}[1]{#1~}
+%===== C O N T E N T S =====
+
+\begin{document}
+\raggedbottom
+
+% Titlepage & ToC
+\hypersetup{pageanchor=false,
+             bookmarksnumbered=true,
+             pdfencoding=unicode
+            }
+\pagenumbering{alph}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\Large Movimento Bebé Quentinho \\[1ex]\large versão 1 }\\
+\vspace*{1cm}
+{\large Gerado por Doxygen 1.9.0}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%--- Begin generated contents ---
+\chapter{Índice dos namespaces}
+\input{namespaces}
+\chapter{Índice da hierarquia}
+\input{hierarchy}
+\chapter{Índice dos componentes}
+\input{annotated}
+\chapter{Índice dos ficheiros}
+\input{files}
+\chapter{Documentação dos namespaces}
+\input{namespace_identity}
+\input{namespace_identity_1_1_models}
+\input{namespace_m_v_c___m_b_q}
+\input{namespace_m_v_c___m_b_q_1_1_controllers}
+\input{namespace_m_v_c___m_b_q_1_1_models}
+\input{namespace_m_v_c___m_b_q_1_1_services}
+\chapter{Documentação da classe}
+\input{class_m_v_c___m_b_q_1_1_controllers_1_1_account_controller}
+\input{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_app_identity_db_context}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_app_user}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_categoria}
+\input{class_m_v_c___m_b_q_1_1_controllers_1_1_categorias_controller}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_doacao}
+\input{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_email_form_model}
+\input{class_m_v_c___m_b_q_1_1_services_1_1_email_sender}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_entrega_familia}
+\input{class_m_v_c___m_b_q_1_1_controllers_1_1_entrega_familias_controller}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_error_view_model}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_evento}
+\input{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_familia}
+\input{class_m_v_c___m_b_q_1_1_controllers_1_1_familias_controller}
+\input{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_inscricao}
+\input{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller}
+\input{class_identity_1_1_models_1_1_login}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_membro_familia}
+\input{class_m_v_c___m_b_q_1_1_controllers_1_1_membro_familias_controller}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_my_convert_http_client}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_newsletter}
+\input{class_m_v_c___m_b_q_1_1_controllers_1_1_newsletters_controller}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_o_que_doar}
+\input{class_m_v_c___m_b_q_1_1_controllers_1_1_o_que_doar_controller}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_produto}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_produto_doado}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_produto_entregue}
+\input{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller}
+\input{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_doados_controller}
+\input{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_entregues_controller}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_request_a_p_i}
+\input{class_identity_1_1_models_1_1_reset_password}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_response_a_p_i}
+\input{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_role_edit}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_role_modification}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_two_factor}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_user}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_doacao}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_entrega_familia}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_inscricao}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_view_model_novo_membro_familia}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_view_model_novo_produto}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_view_model_novo_voluntario}
+\input{class_m_v_c___m_b_q_1_1_models_1_1_voluntario}
+\input{class_m_v_c___m_b_q_1_1_controllers_1_1_voluntarios_controller}
+\chapter{Documentação do ficheiro}
+\input{_account_controller_8cs}
+\input{_admin_controller_8cs}
+\input{_categorias_controller_8cs}
+\input{_doacaos_controller_8cs}
+\input{_entrega_familias_controller_8cs}
+\input{_eventoes_controller_8cs}
+\input{_familias_controller_8cs}
+\input{_home_controller_8cs}
+\input{_inscricoes_controller_8cs}
+\input{_membro_familias_controller_8cs}
+\input{_newsletters_controller_8cs}
+\input{_o_que_doar_controller_8cs}
+\input{_produtos_controller_8cs}
+\input{_produtos_doados_controller_8cs}
+\input{_produtos_entregues_controller_8cs}
+\input{_role_controller_8cs}
+\input{_voluntarios_controller_8cs}
+\input{_app_identity_db_context_8cs}
+\input{_app_movimento_b_q_db_context_8cs}
+\input{_app_user_8cs}
+\input{_categoria_8cs}
+\input{_doacao_8cs}
+\input{_email_form_model_8cs}
+\input{_entrega_familia_8cs}
+\input{_error_view_model_8cs}
+\input{_evento_8cs}
+\input{_familia_8cs}
+\input{_inscricao_8cs}
+\input{_login_8cs}
+\input{_membro_familia_8cs}
+\input{_my_convert_http_client_8cs}
+\input{_newsletter_8cs}
+\input{_o_que_doar_8cs}
+\input{_produto_8cs}
+\input{_produto_doado_8cs}
+\input{_produto_entregue_8cs}
+\input{_request_a_p_i_8cs}
+\input{_reset_password_8cs}
+\input{_response_a_p_i_8cs}
+\input{_role_edit_8cs}
+\input{_role_modification_8cs}
+\input{_two_factor_8cs}
+\input{_user_8cs}
+\input{_view_model_nova_doacao_8cs}
+\input{_view_model_nova_entrega_familia_8cs}
+\input{_view_model_nova_inscri_xC3_xA7_xC3_xA3o_8cs}
+\input{_view_model_novo_membro_familia_8cs}
+\input{_view_model_novo_produto_8cs}
+\input{_view_model_novo_voluntario_8cs}
+\input{_voluntario_8cs}
+\input{_email_sender_8cs}
+%--- End generated contents ---
+
+% Index
+\backmatter
+\newpage
+\phantomsection
+\clearemptydoublepage
+\addcontentsline{toc}{chapter}{\indexname}
+\printindex
+
+\end{document}

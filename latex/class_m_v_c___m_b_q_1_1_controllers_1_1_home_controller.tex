@@ -1,0 +1,370 @@
+\hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller}{}\doxysection{Referência à classe MVC\+\_\+\+MBQ.\+Controllers.\+Home\+Controller}
+\label{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller}\index{MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}}
+
+
+Controller relativo às páginas do website.  
+
+
+Diagrama de heranças da classe MVC\+\_\+\+MBQ.\+Controllers.\+Home\+Controller\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a2592d6a0818a662d7885ee9573f3dd65}{Home\+Controller}} (ILogger$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller}{Home\+Controller}} $>$ logger, Data.\+Application\+Db\+Context application, User\+Manager$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}} $>$ user\+Mgr)
+\begin{DoxyCompactList}\small\item\em Método que atribui a variaveis locais informação guardada na BD. \end{DoxyCompactList}\item 
+IAction\+Result \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a9208a25625cca933f3963520abb2d0d0}{Index}} ()
+\begin{DoxyCompactList}\small\item\em Método da view Index do website. Permite acesso de utilizadores não autenticados Obtém data de atualização do ficheiro xml \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a918608bff7978093d3854dab43827421}{Papi\+App}} ()
+\begin{DoxyCompactList}\small\item\em Método da view Papi\+Appi do website. Obtém data de atualização do ficheiro xml Acesso apenas a utilizadores autenticados \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a5a058763fc5fd5f2ff7b0d154664f05a}{Equipa}} ()
+\begin{DoxyCompactList}\small\item\em Método da view Equipa do website. Acesso apenas a utilizadores autenticados \end{DoxyCompactList}\item 
+IAction\+Result \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a0ffa1d65bec53cd3db31dbae4503007b}{Error}} ()
+\begin{DoxyCompactList}\small\item\em Método para Erro \end{DoxyCompactList}\item 
+IAction\+Result \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a1991ad68f2a2872084f2beb9902a9599}{Como\+Ajudar}} ()
+\begin{DoxyCompactList}\small\item\em Método que devolve view de Como Ajudar \end{DoxyCompactList}\item 
+IAction\+Result \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a1c12fd6d065626563edffb053b71c6b1}{Ana\+Domingues}} ()
+\begin{DoxyCompactList}\small\item\em Método que devolve view de página pessoal de Ana Domingues \end{DoxyCompactList}\item 
+IAction\+Result \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_ae48e772cdba89ecb74cd31216f6980ec}{Contactos}} ()
+\begin{DoxyCompactList}\small\item\em Método que devolve view de Contactos do MBQ \end{DoxyCompactList}\item 
+IAction\+Result \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a58029e3845985c7d666c2bca6c822547}{Privacidade}} ()
+\begin{DoxyCompactList}\small\item\em Método que devolve view da Política de Privacidade \end{DoxyCompactList}\item 
+IAction\+Result \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_af52ed438d5770a18e916c081c94f9110}{Campanha\+Donativos}} ()
+\begin{DoxyCompactList}\small\item\em Método que devolve view de Campanha de Donativos realizadas pelo MBQ \end{DoxyCompactList}\item 
+IAction\+Result \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a567b5e138b66d30b14aaabcf7d60e258}{Joao\+Silva}} ()
+\begin{DoxyCompactList}\small\item\em Método que devolve view de página pessoal de João Silva \end{DoxyCompactList}\item 
+IAction\+Result \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a08ae3ee21f42d4578ff164163c5e2f6f}{Quem\+Somos}} ()
+\begin{DoxyCompactList}\small\item\em Método que devolve view de Quem Somos na qual explica o propósito do MBQ \end{DoxyCompactList}\item 
+IAction\+Result \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a3a187befc7f386ec212163e515b4b44e}{Tipos\+Donativo}} ()
+\begin{DoxyCompactList}\small\item\em Método que devolve view de Tipos de Donativos na qual explica os tipos de donativos que MBQ aceitam \end{DoxyCompactList}\item 
+IAction\+Result \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_aa6ce8c3e772a3f4f20cffa041046d72f}{Docs}} ()
+\begin{DoxyCompactList}\small\item\em Método que devolve view de Documentação técnica e de utilização da Papi\+Appi \end{DoxyCompactList}\item 
+Action\+Result \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a62822ad57042ded1c220f3d5636b5b37}{Sent}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+readonly ILogger$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller}{Home\+Controller}} $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a8eeec123cc95f1442bd285bced26ddda}{\+\_\+logger}}
+\begin{DoxyCompactList}\small\item\em variável local do tipo ILogger para gestão de interface \end{DoxyCompactList}\item 
+readonly Data.\+Application\+Db\+Context \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a9fb0460fec499815c7919b55fd47c83d}{\+\_\+application}}
+\begin{DoxyCompactList}\small\item\em variável local to tipo Data.\+Application\+Db\+Context Para gestão de identity \end{DoxyCompactList}\item 
+User\+Manager$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}} $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_ac0264c48710db1ceddec853836fe6c9c}{user\+Manager}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Controller relativo às páginas do website. 
+
+
+
+Definido na linha 21 do ficheiro Home\+Controller.\+cs.
+
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a2592d6a0818a662d7885ee9573f3dd65}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a2592d6a0818a662d7885ee9573f3dd65}} 
+\index{MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}!HomeController@{HomeController}}
+\index{HomeController@{HomeController}!MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}}
+\doxysubsubsection{\texorpdfstring{HomeController()}{HomeController()}}
+{\footnotesize\ttfamily MVC\+\_\+\+MBQ.\+Controllers.\+Home\+Controller.\+Home\+Controller (\begin{DoxyParamCaption}\item[{ILogger$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller}{Home\+Controller}} $>$}]{logger,  }\item[{Data.\+Application\+Db\+Context}]{application,  }\item[{User\+Manager$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}} $>$}]{user\+Mgr }\end{DoxyParamCaption})}
+
+
+
+Método que atribui a variaveis locais informação guardada na BD. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em logger} & objeto do tipo ILogger. \\
+\hline
+{\em application} & objeto do tipo Data.\+Application\+Db\+Context.\\
+\hline
+{\em user\+Mgr} & objeto do tipo User\+Manager.\\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha 42 do ficheiro Home\+Controller.\+cs.
+
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a1c12fd6d065626563edffb053b71c6b1}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a1c12fd6d065626563edffb053b71c6b1}} 
+\index{MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}!AnaDomingues@{AnaDomingues}}
+\index{AnaDomingues@{AnaDomingues}!MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}}
+\doxysubsubsection{\texorpdfstring{AnaDomingues()}{AnaDomingues()}}
+{\footnotesize\ttfamily IAction\+Result MVC\+\_\+\+MBQ.\+Controllers.\+Home\+Controller.\+Ana\+Domingues (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que devolve view de página pessoal de Ana Domingues 
+
+\begin{DoxyReturn}{Retorna}
+view de Ana\+Domingues
+\end{DoxyReturn}
+
+
+Definido na linha 133 do ficheiro Home\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_af52ed438d5770a18e916c081c94f9110}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_af52ed438d5770a18e916c081c94f9110}} 
+\index{MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}!CampanhaDonativos@{CampanhaDonativos}}
+\index{CampanhaDonativos@{CampanhaDonativos}!MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}}
+\doxysubsubsection{\texorpdfstring{CampanhaDonativos()}{CampanhaDonativos()}}
+{\footnotesize\ttfamily IAction\+Result MVC\+\_\+\+MBQ.\+Controllers.\+Home\+Controller.\+Campanha\+Donativos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que devolve view de Campanha de Donativos realizadas pelo MBQ 
+
+\begin{DoxyReturn}{Retorna}
+devolve view de Campanha\+Donativos
+\end{DoxyReturn}
+
+
+Definido na linha 157 do ficheiro Home\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a1991ad68f2a2872084f2beb9902a9599}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a1991ad68f2a2872084f2beb9902a9599}} 
+\index{MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}!ComoAjudar@{ComoAjudar}}
+\index{ComoAjudar@{ComoAjudar}!MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}}
+\doxysubsubsection{\texorpdfstring{ComoAjudar()}{ComoAjudar()}}
+{\footnotesize\ttfamily IAction\+Result MVC\+\_\+\+MBQ.\+Controllers.\+Home\+Controller.\+Como\+Ajudar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que devolve view de Como Ajudar 
+
+\begin{DoxyReturn}{Retorna}
+view de Como\+Ajudar
+\end{DoxyReturn}
+
+
+Definido na linha 124 do ficheiro Home\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_ae48e772cdba89ecb74cd31216f6980ec}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_ae48e772cdba89ecb74cd31216f6980ec}} 
+\index{MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}!Contactos@{Contactos}}
+\index{Contactos@{Contactos}!MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}}
+\doxysubsubsection{\texorpdfstring{Contactos()}{Contactos()}}
+{\footnotesize\ttfamily IAction\+Result MVC\+\_\+\+MBQ.\+Controllers.\+Home\+Controller.\+Contactos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que devolve view de Contactos do MBQ 
+
+\begin{DoxyReturn}{Retorna}
+devolve view de Contactos
+\end{DoxyReturn}
+
+
+Definido na linha 141 do ficheiro Home\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_aa6ce8c3e772a3f4f20cffa041046d72f}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_aa6ce8c3e772a3f4f20cffa041046d72f}} 
+\index{MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}!Docs@{Docs}}
+\index{Docs@{Docs}!MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}}
+\doxysubsubsection{\texorpdfstring{Docs()}{Docs()}}
+{\footnotesize\ttfamily IAction\+Result MVC\+\_\+\+MBQ.\+Controllers.\+Home\+Controller.\+Docs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que devolve view de Documentação técnica e de utilização da Papi\+Appi 
+
+\begin{DoxyReturn}{Retorna}
+devolve view de Docs
+\end{DoxyReturn}
+
+
+Definido na linha 189 do ficheiro Home\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a5a058763fc5fd5f2ff7b0d154664f05a}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a5a058763fc5fd5f2ff7b0d154664f05a}} 
+\index{MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}!Equipa@{Equipa}}
+\index{Equipa@{Equipa}!MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}}
+\doxysubsubsection{\texorpdfstring{Equipa()}{Equipa()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Home\+Controller.\+Equipa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método da view Equipa do website. Acesso apenas a utilizadores autenticados 
+
+\begin{DoxyReturn}{Retorna}
+view da Equipa. Caso utilizador não autenticado devolve view \+\_\+no\+Acess
+\end{DoxyReturn}
+
+
+Definido na linha 96 do ficheiro Home\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a0ffa1d65bec53cd3db31dbae4503007b}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a0ffa1d65bec53cd3db31dbae4503007b}} 
+\index{MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}!Error@{Error}}
+\index{Error@{Error}!MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}}
+\doxysubsubsection{\texorpdfstring{Error()}{Error()}}
+{\footnotesize\ttfamily IAction\+Result MVC\+\_\+\+MBQ.\+Controllers.\+Home\+Controller.\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método para Erro 
+
+\begin{DoxyReturn}{Retorna}
+view com erro especificado
+\end{DoxyReturn}
+
+
+Definido na linha 115 do ficheiro Home\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a9208a25625cca933f3963520abb2d0d0}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a9208a25625cca933f3963520abb2d0d0}} 
+\index{MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}!Index@{Index}}
+\index{Index@{Index}!MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}}
+\doxysubsubsection{\texorpdfstring{Index()}{Index()}}
+{\footnotesize\ttfamily IAction\+Result MVC\+\_\+\+MBQ.\+Controllers.\+Home\+Controller.\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método da view Index do website. Permite acesso de utilizadores não autenticados Obtém data de atualização do ficheiro xml 
+
+\begin{DoxyReturn}{Retorna}
+view Index com data de atualização
+\end{DoxyReturn}
+
+
+Definido na linha 55 do ficheiro Home\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a567b5e138b66d30b14aaabcf7d60e258}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a567b5e138b66d30b14aaabcf7d60e258}} 
+\index{MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}!JoaoSilva@{JoaoSilva}}
+\index{JoaoSilva@{JoaoSilva}!MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}}
+\doxysubsubsection{\texorpdfstring{JoaoSilva()}{JoaoSilva()}}
+{\footnotesize\ttfamily IAction\+Result MVC\+\_\+\+MBQ.\+Controllers.\+Home\+Controller.\+Joao\+Silva (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que devolve view de página pessoal de João Silva 
+
+\begin{DoxyReturn}{Retorna}
+view de Joao\+Silva
+\end{DoxyReturn}
+
+
+Definido na linha 165 do ficheiro Home\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a918608bff7978093d3854dab43827421}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a918608bff7978093d3854dab43827421}} 
+\index{MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}!PapiApp@{PapiApp}}
+\index{PapiApp@{PapiApp}!MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}}
+\doxysubsubsection{\texorpdfstring{PapiApp()}{PapiApp()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Home\+Controller.\+Papi\+App (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método da view Papi\+Appi do website. Obtém data de atualização do ficheiro xml Acesso apenas a utilizadores autenticados 
+
+\begin{DoxyReturn}{Retorna}
+view da Papi\+Appi com data de atualização.\+Caso utilizador não autenticado devolve view \+\_\+no\+Acess
+\end{DoxyReturn}
+
+
+Definido na linha 71 do ficheiro Home\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a58029e3845985c7d666c2bca6c822547}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a58029e3845985c7d666c2bca6c822547}} 
+\index{MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}!Privacidade@{Privacidade}}
+\index{Privacidade@{Privacidade}!MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}}
+\doxysubsubsection{\texorpdfstring{Privacidade()}{Privacidade()}}
+{\footnotesize\ttfamily IAction\+Result MVC\+\_\+\+MBQ.\+Controllers.\+Home\+Controller.\+Privacidade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que devolve view da Política de Privacidade 
+
+\begin{DoxyReturn}{Retorna}
+devolve view de Privacidade
+\end{DoxyReturn}
+
+
+Definido na linha 149 do ficheiro Home\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a08ae3ee21f42d4578ff164163c5e2f6f}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a08ae3ee21f42d4578ff164163c5e2f6f}} 
+\index{MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}!QuemSomos@{QuemSomos}}
+\index{QuemSomos@{QuemSomos}!MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}}
+\doxysubsubsection{\texorpdfstring{QuemSomos()}{QuemSomos()}}
+{\footnotesize\ttfamily IAction\+Result MVC\+\_\+\+MBQ.\+Controllers.\+Home\+Controller.\+Quem\+Somos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que devolve view de Quem Somos na qual explica o propósito do MBQ 
+
+\begin{DoxyReturn}{Retorna}
+devolve view de Quem\+Somos
+\end{DoxyReturn}
+
+
+Definido na linha 173 do ficheiro Home\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a62822ad57042ded1c220f3d5636b5b37}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a62822ad57042ded1c220f3d5636b5b37}} 
+\index{MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}!Sent@{Sent}}
+\index{Sent@{Sent}!MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}}
+\doxysubsubsection{\texorpdfstring{Sent()}{Sent()}}
+{\footnotesize\ttfamily Action\+Result MVC\+\_\+\+MBQ.\+Controllers.\+Home\+Controller.\+Sent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definido na linha 194 do ficheiro Home\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a3a187befc7f386ec212163e515b4b44e}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a3a187befc7f386ec212163e515b4b44e}} 
+\index{MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}!TiposDonativo@{TiposDonativo}}
+\index{TiposDonativo@{TiposDonativo}!MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}}
+\doxysubsubsection{\texorpdfstring{TiposDonativo()}{TiposDonativo()}}
+{\footnotesize\ttfamily IAction\+Result MVC\+\_\+\+MBQ.\+Controllers.\+Home\+Controller.\+Tipos\+Donativo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que devolve view de Tipos de Donativos na qual explica os tipos de donativos que MBQ aceitam 
+
+\begin{DoxyReturn}{Retorna}
+devolve view de Tipos\+Donativo
+\end{DoxyReturn}
+
+
+Definido na linha 181 do ficheiro Home\+Controller.\+cs.
+
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a9fb0460fec499815c7919b55fd47c83d}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a9fb0460fec499815c7919b55fd47c83d}} 
+\index{MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}!\_application@{\_application}}
+\index{\_application@{\_application}!MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}}
+\doxysubsubsection{\texorpdfstring{\_application}{\_application}}
+{\footnotesize\ttfamily readonly Data.\+Application\+Db\+Context MVC\+\_\+\+MBQ.\+Controllers.\+Home\+Controller.\+\_\+application\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+variável local to tipo Data.\+Application\+Db\+Context Para gestão de identity 
+
+
+
+Definido na linha 32 do ficheiro Home\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a8eeec123cc95f1442bd285bced26ddda}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_a8eeec123cc95f1442bd285bced26ddda}} 
+\index{MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}!\_logger@{\_logger}}
+\index{\_logger@{\_logger}!MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}}
+\doxysubsubsection{\texorpdfstring{\_logger}{\_logger}}
+{\footnotesize\ttfamily readonly ILogger$<$\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller}{Home\+Controller}}$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Home\+Controller.\+\_\+logger\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+variável local do tipo ILogger para gestão de interface 
+
+
+
+Definido na linha 26 do ficheiro Home\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_ac0264c48710db1ceddec853836fe6c9c}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_home_controller_ac0264c48710db1ceddec853836fe6c9c}} 
+\index{MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}!userManager@{userManager}}
+\index{userManager@{userManager}!MVC\_MBQ.Controllers.HomeController@{MVC\_MBQ.Controllers.HomeController}}
+\doxysubsubsection{\texorpdfstring{userManager}{userManager}}
+{\footnotesize\ttfamily User\+Manager$<$\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}}$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Home\+Controller.\+user\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definido na linha 34 do ficheiro Home\+Controller.\+cs.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/stduser/\+One\+Drive -\/ Instituto Politécnico de Setúbal/\+LW/\+Doc\+Tecnica\+\_\+dados/\+Controllers/\mbox{\hyperlink{_home_controller_8cs}{Home\+Controller.\+cs}}\end{DoxyCompactItemize}

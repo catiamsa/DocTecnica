@@ -1,0 +1,150 @@
+\hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller}{}\doxysection{Referência à classe MVC\+\_\+\+MBQ.\+Controllers.\+Role\+Controller}
+\label{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller}\index{MVC\_MBQ.Controllers.RoleController@{MVC\_MBQ.Controllers.RoleController}}
+Diagrama de heranças da classe MVC\+\_\+\+MBQ.\+Controllers.\+Role\+Controller\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_aec839a2d7db945582d96e14a70ca12a2}{Role\+Controller}} (Role\+Manager$<$ Identity\+Role $>$ role\+Mgr, User\+Manager$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}} $>$ user\+Mrg)
+\item 
+View\+Result \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_af76db8c6cc7fafdeac26164099dad29b}{Index}} ()
+\item 
+IAction\+Result \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_a832d8edd5e072776c277dda7de13bcb5}{Create}} ()
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_a9af9301c74f2b0847194e7f298d069ca}{Create}} (\mbox{[}Required\mbox{]} string name)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_ad763cb781bf2a7fdf59459d255bbd440}{Delete}} (string id)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_af57f6ce18f5de4821de1777a082888d2}{Update}} (string id)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_a7d926fe56d56b86d91803db5b6e648e8}{Update}} (\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_role_modification}{Role\+Modification}} model)
+\end{DoxyCompactItemize}
+\doxysubsection*{Membros privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_a7bbfeccd74cd9c72f699766cb067465b}{Errors}} (Identity\+Result result)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+Role\+Manager$<$ Identity\+Role $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_a22b8c12bddbcb8d6b59f710aefb1e323}{role\+Manager}}
+\item 
+User\+Manager$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}} $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_ae373da041ba3d01837a4bf0f5de67484}{user\+Manager}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+
+
+Definido na linha 12 do ficheiro Role\+Controller.\+cs.
+
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_aec839a2d7db945582d96e14a70ca12a2}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_aec839a2d7db945582d96e14a70ca12a2}} 
+\index{MVC\_MBQ.Controllers.RoleController@{MVC\_MBQ.Controllers.RoleController}!RoleController@{RoleController}}
+\index{RoleController@{RoleController}!MVC\_MBQ.Controllers.RoleController@{MVC\_MBQ.Controllers.RoleController}}
+\doxysubsubsection{\texorpdfstring{RoleController()}{RoleController()}}
+{\footnotesize\ttfamily MVC\+\_\+\+MBQ.\+Controllers.\+Role\+Controller.\+Role\+Controller (\begin{DoxyParamCaption}\item[{Role\+Manager$<$ Identity\+Role $>$}]{role\+Mgr,  }\item[{User\+Manager$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}} $>$}]{user\+Mrg }\end{DoxyParamCaption})}
+
+
+
+Definido na linha 17 do ficheiro Role\+Controller.\+cs.
+
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_a832d8edd5e072776c277dda7de13bcb5}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_a832d8edd5e072776c277dda7de13bcb5}} 
+\index{MVC\_MBQ.Controllers.RoleController@{MVC\_MBQ.Controllers.RoleController}!Create@{Create}}
+\index{Create@{Create}!MVC\_MBQ.Controllers.RoleController@{MVC\_MBQ.Controllers.RoleController}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily IAction\+Result MVC\+\_\+\+MBQ.\+Controllers.\+Role\+Controller.\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_a9af9301c74f2b0847194e7f298d069ca}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_a9af9301c74f2b0847194e7f298d069ca}} 
+\index{MVC\_MBQ.Controllers.RoleController@{MVC\_MBQ.Controllers.RoleController}!Create@{Create}}
+\index{Create@{Create}!MVC\_MBQ.Controllers.RoleController@{MVC\_MBQ.Controllers.RoleController}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Role\+Controller.\+Create (\begin{DoxyParamCaption}\item[{\mbox{[}\+Required\mbox{]} string}]{name }\end{DoxyParamCaption})}
+
+
+
+Definido na linha 28 do ficheiro Role\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_ad763cb781bf2a7fdf59459d255bbd440}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_ad763cb781bf2a7fdf59459d255bbd440}} 
+\index{MVC\_MBQ.Controllers.RoleController@{MVC\_MBQ.Controllers.RoleController}!Delete@{Delete}}
+\index{Delete@{Delete}!MVC\_MBQ.Controllers.RoleController@{MVC\_MBQ.Controllers.RoleController}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Role\+Controller.\+Delete (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+Definido na linha 42 do ficheiro Role\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_a7bbfeccd74cd9c72f699766cb067465b}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_a7bbfeccd74cd9c72f699766cb067465b}} 
+\index{MVC\_MBQ.Controllers.RoleController@{MVC\_MBQ.Controllers.RoleController}!Errors@{Errors}}
+\index{Errors@{Errors}!MVC\_MBQ.Controllers.RoleController@{MVC\_MBQ.Controllers.RoleController}}
+\doxysubsubsection{\texorpdfstring{Errors()}{Errors()}}
+{\footnotesize\ttfamily void MVC\+\_\+\+MBQ.\+Controllers.\+Role\+Controller.\+Errors (\begin{DoxyParamCaption}\item[{Identity\+Result}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definido na linha 110 do ficheiro Role\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_af76db8c6cc7fafdeac26164099dad29b}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_af76db8c6cc7fafdeac26164099dad29b}} 
+\index{MVC\_MBQ.Controllers.RoleController@{MVC\_MBQ.Controllers.RoleController}!Index@{Index}}
+\index{Index@{Index}!MVC\_MBQ.Controllers.RoleController@{MVC\_MBQ.Controllers.RoleController}}
+\doxysubsubsection{\texorpdfstring{Index()}{Index()}}
+{\footnotesize\ttfamily View\+Result MVC\+\_\+\+MBQ.\+Controllers.\+Role\+Controller.\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_a7d926fe56d56b86d91803db5b6e648e8}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_a7d926fe56d56b86d91803db5b6e648e8}} 
+\index{MVC\_MBQ.Controllers.RoleController@{MVC\_MBQ.Controllers.RoleController}!Update@{Update}}
+\index{Update@{Update}!MVC\_MBQ.Controllers.RoleController@{MVC\_MBQ.Controllers.RoleController}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Role\+Controller.\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_role_modification}{Role\+Modification}}}]{model }\end{DoxyParamCaption})}
+
+
+
+Definido na linha 77 do ficheiro Role\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_af57f6ce18f5de4821de1777a082888d2}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_af57f6ce18f5de4821de1777a082888d2}} 
+\index{MVC\_MBQ.Controllers.RoleController@{MVC\_MBQ.Controllers.RoleController}!Update@{Update}}
+\index{Update@{Update}!MVC\_MBQ.Controllers.RoleController@{MVC\_MBQ.Controllers.RoleController}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Role\+Controller.\+Update (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+Definido na linha 58 do ficheiro Role\+Controller.\+cs.
+
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_a22b8c12bddbcb8d6b59f710aefb1e323}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_a22b8c12bddbcb8d6b59f710aefb1e323}} 
+\index{MVC\_MBQ.Controllers.RoleController@{MVC\_MBQ.Controllers.RoleController}!roleManager@{roleManager}}
+\index{roleManager@{roleManager}!MVC\_MBQ.Controllers.RoleController@{MVC\_MBQ.Controllers.RoleController}}
+\doxysubsubsection{\texorpdfstring{roleManager}{roleManager}}
+{\footnotesize\ttfamily Role\+Manager$<$Identity\+Role$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Role\+Controller.\+role\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definido na linha 14 do ficheiro Role\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_ae373da041ba3d01837a4bf0f5de67484}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_role_controller_ae373da041ba3d01837a4bf0f5de67484}} 
+\index{MVC\_MBQ.Controllers.RoleController@{MVC\_MBQ.Controllers.RoleController}!userManager@{userManager}}
+\index{userManager@{userManager}!MVC\_MBQ.Controllers.RoleController@{MVC\_MBQ.Controllers.RoleController}}
+\doxysubsubsection{\texorpdfstring{userManager}{userManager}}
+{\footnotesize\ttfamily User\+Manager$<$\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}}$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Role\+Controller.\+user\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definido na linha 15 do ficheiro Role\+Controller.\+cs.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/stduser/\+One\+Drive -\/ Instituto Politécnico de Setúbal/\+LW/\+Doc\+Tecnica\+\_\+dados/\+Controllers/\mbox{\hyperlink{_role_controller_8cs}{Role\+Controller.\+cs}}\end{DoxyCompactItemize}

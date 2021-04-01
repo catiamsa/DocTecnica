@@ -1,0 +1,293 @@
+\hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller}{}\doxysection{Referência à classe MVC\+\_\+\+MBQ.\+Controllers.\+Doacaos\+Controller}
+\label{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller}\index{MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}}
+
+
+Controller relativo ao Modelo Doacao. Fornece/\+Implementa todos os métodos relativos a acções CRUD  
+
+
+Diagrama de heranças da classe MVC\+\_\+\+MBQ.\+Controllers.\+Doacaos\+Controller\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_ae31989c123883cdecc134a771bd7f4e9}{Doacaos\+Controller}} (\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}} context)
+\begin{DoxyCompactList}\small\item\em Método que atribui o objeto da classe App\+Movimento\+BDQContext a variável local \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_a1fa4f97ee158a4287cc89914c6856f3c}{Index}} ()
+\begin{DoxyCompactList}\small\item\em Método da view Index referente ao modelo Doacao \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_a0f27e8c30d33a27ceba1fede091c180b}{Details}} (int? id)
+\begin{DoxyCompactList}\small\item\em Método que permite ler todos os detalhes de objeto da classe Doacao, selecionado em view, cujos dados estão guardados em BD \end{DoxyCompactList}\item 
+IAction\+Result \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_af09282cdf3a76a132ae8e7f7da86b3b0}{Create}} ()
+\begin{DoxyCompactList}\small\item\em Método que devolve a view Create do modelo Doacao com objeto view\+Model\+Nova\+Doacao. Atribui a view\+Model\+Nova\+Doacao dados de voluntarios, eventos e produtos que se encontram em BD Instancia uma nova Lista do tipo Produto\+Doado, vazia e instancia e adiciona um objeto Produto\+Doado vazio a esta lista \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_a1dcc15ff4176de75caa1298bdd7d54e7}{Create}} (\mbox{[}Bind(\char`\"{}ID,Data\+Doacao,Evento\+ID,Voluntario\+ID,Produtos\+Doados\char`\"{})\mbox{]} Doacao doacao)
+\begin{DoxyCompactList}\small\item\em POST\+: Doacões/\+Create Método que adiciona objeto Doacao criado e objetos Produto\+Doado à BD Adiciona objetos do tipo Produto\+Doado à BD, ao objeto do tipo Doacao criado To protect from overposting attacks, enable the specific properties you want to bind to. For more details, see \href{http://go.microsoft.com/fwlink/?LinkId=317598}{\texttt{ http\+://go.\+microsoft.\+com/fwlink/?\+Link\+Id=317598}}. \end{DoxyCompactList}\item 
+IAction\+Result \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_a20b33638e8010143be1234b4fcb8e2d8}{Add\+Produto\+Doado}} (\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_doacao}{View\+Model\+Nova\+Doacao}} view\+Model\+Nova\+Doacao)
+\begin{DoxyCompactList}\small\item\em Método que atribui ao view\+Model\+Nova\+Doacao os dados da BD de Voluntarios, Eventos, Produtos Instancia e adiciona à doacao um novo objeto, sem dados, do tipo Produto\+Doado \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_ab7a772b55c2e311bfb9e7298c9027dac}{Edit}} (int? id)
+\begin{DoxyCompactList}\small\item\em Método que devolve a view Editar do objeto seleccionado da classe Doacao que se encontra em BD \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_a5b69989f0b44ad19e44ca24b089cce4f}{Edit}} (int id, \mbox{[}Bind(\char`\"{}ID,Data\+Doacao,Evento\+ID,Voluntario\+ID\char`\"{})\mbox{]} Doacao doacao)
+\begin{DoxyCompactList}\small\item\em POST\+: Doacaos/\+Edit Método que edita objeto do tipo Doacao que se encontra na BD e atualiza a BD To protect from overposting attacks, enable the specific properties you want to bind to. For more details, see \href{http://go.microsoft.com/fwlink/?LinkId=317598}{\texttt{ http\+://go.\+microsoft.\+com/fwlink/?\+Link\+Id=317598}}. \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_ad78fb350d9ba39d7b76f68d19911652c}{Delete}} (int? id)
+\begin{DoxyCompactList}\small\item\em Método que devolve a view Delete com objeto da classe Doacao selecionado e que se encontra guardado em BD \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_ab0c211461f2a79feee1d9b3053bdd84b}{Delete\+Confirmed}} (int id)
+\begin{DoxyCompactList}\small\item\em Método que apaga objeto selecionado e atualiza a BD \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membros privados}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_ab7102dc8c8848fccaddc7c9c190feb09}{Doacao\+Exists}} (int id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}} \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_ab23bb2e5a3ebe701a7e3d7bb64264166}{\+\_\+context}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Controller relativo ao Modelo Doacao. Fornece/\+Implementa todos os métodos relativos a acções CRUD 
+
+
+
+Definido na linha 16 do ficheiro Doacaos\+Controller.\+cs.
+
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_ae31989c123883cdecc134a771bd7f4e9}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_ae31989c123883cdecc134a771bd7f4e9}} 
+\index{MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}!DoacaosController@{DoacaosController}}
+\index{DoacaosController@{DoacaosController}!MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}}
+\doxysubsubsection{\texorpdfstring{DoacaosController()}{DoacaosController()}}
+{\footnotesize\ttfamily MVC\+\_\+\+MBQ.\+Controllers.\+Doacaos\+Controller.\+Doacaos\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}}}]{context }\end{DoxyParamCaption})}
+
+
+
+Método que atribui o objeto da classe App\+Movimento\+BDQContext a variável local 
+
+
+
+Definido na linha 26 do ficheiro Doacaos\+Controller.\+cs.
+
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_a20b33638e8010143be1234b4fcb8e2d8}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_a20b33638e8010143be1234b4fcb8e2d8}} 
+\index{MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}!AddProdutoDoado@{AddProdutoDoado}}
+\index{AddProdutoDoado@{AddProdutoDoado}!MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}}
+\doxysubsubsection{\texorpdfstring{AddProdutoDoado()}{AddProdutoDoado()}}
+{\footnotesize\ttfamily IAction\+Result MVC\+\_\+\+MBQ.\+Controllers.\+Doacaos\+Controller.\+Add\+Produto\+Doado (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_view_model_nova_doacao}{View\+Model\+Nova\+Doacao}}}]{view\+Model\+Nova\+Doacao }\end{DoxyParamCaption})}
+
+
+
+Método que atribui ao view\+Model\+Nova\+Doacao os dados da BD de Voluntarios, Eventos, Produtos Instancia e adiciona à doacao um novo objeto, sem dados, do tipo Produto\+Doado 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em view\+Model\+Nova\+Doacao} & objeto do tipo View\+Model\+Nova\+Doacao\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+devolve a view Create com o view\+Model\+Nova\+Doacao com dados de Voluntarios, Eventos e Produtos e um novo campo no formulário para adicionar novo Produto\+Doado
+\end{DoxyReturn}
+
+
+Definido na linha 130 do ficheiro Doacaos\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_af09282cdf3a76a132ae8e7f7da86b3b0}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_af09282cdf3a76a132ae8e7f7da86b3b0}} 
+\index{MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}!Create@{Create}}
+\index{Create@{Create}!MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily IAction\+Result MVC\+\_\+\+MBQ.\+Controllers.\+Doacaos\+Controller.\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que devolve a view Create do modelo Doacao com objeto view\+Model\+Nova\+Doacao. Atribui a view\+Model\+Nova\+Doacao dados de voluntarios, eventos e produtos que se encontram em BD Instancia uma nova Lista do tipo Produto\+Doado, vazia e instancia e adiciona um objeto Produto\+Doado vazio a esta lista 
+
+\begin{DoxyReturn}{Retorna}
+devolve view com formulário para criar o objeto da classe view\+Model\+Nova\+Doacao
+\end{DoxyReturn}
+
+
+Definido na linha 74 do ficheiro Doacaos\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_a1dcc15ff4176de75caa1298bdd7d54e7}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_a1dcc15ff4176de75caa1298bdd7d54e7}} 
+\index{MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}!Create@{Create}}
+\index{Create@{Create}!MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Doacaos\+Controller.\+Create (\begin{DoxyParamCaption}\item[{\mbox{[}\+Bind(\char`\"{}\+ID,\+Data\+Doacao,\+Evento\+ID,\+Voluntario\+ID,\+Produtos\+Doados\char`\"{})\mbox{]} \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_doacao}{Doacao}}}]{doacao }\end{DoxyParamCaption})}
+
+
+
+POST\+: Doacões/\+Create Método que adiciona objeto Doacao criado e objetos Produto\+Doado à BD Adiciona objetos do tipo Produto\+Doado à BD, ao objeto do tipo Doacao criado To protect from overposting attacks, enable the specific properties you want to bind to. For more details, see \href{http://go.microsoft.com/fwlink/?LinkId=317598}{\texttt{ http\+://go.\+microsoft.\+com/fwlink/?\+Link\+Id=317598}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em doacao} & objeto da classe Doacao criado no Formulário\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+View Create com o objeto criado
+\end{DoxyReturn}
+
+
+Definido na linha 106 do ficheiro Doacaos\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_ad78fb350d9ba39d7b76f68d19911652c}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_ad78fb350d9ba39d7b76f68d19911652c}} 
+\index{MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}!Delete@{Delete}}
+\index{Delete@{Delete}!MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Doacaos\+Controller.\+Delete (\begin{DoxyParamCaption}\item[{int?}]{id }\end{DoxyParamCaption})}
+
+
+
+Método que devolve a view Delete com objeto da classe Doacao selecionado e que se encontra guardado em BD 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & ID do objeto escolhido para apagar\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+devolve view com formulário para apagar o objeto selecionado da classe Doacao
+\end{DoxyReturn}
+
+
+Definido na linha 216 do ficheiro Doacaos\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_ab0c211461f2a79feee1d9b3053bdd84b}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_ab0c211461f2a79feee1d9b3053bdd84b}} 
+\index{MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}!DeleteConfirmed@{DeleteConfirmed}}
+\index{DeleteConfirmed@{DeleteConfirmed}!MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}}
+\doxysubsubsection{\texorpdfstring{DeleteConfirmed()}{DeleteConfirmed()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Doacaos\+Controller.\+Delete\+Confirmed (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Método que apaga objeto selecionado e atualiza a BD 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & ID do objeto escolhido para apagar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+devolve view Index
+\end{DoxyReturn}
+
+
+Definido na linha 242 do ficheiro Doacaos\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_a0f27e8c30d33a27ceba1fede091c180b}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_a0f27e8c30d33a27ceba1fede091c180b}} 
+\index{MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}!Details@{Details}}
+\index{Details@{Details}!MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}}
+\doxysubsubsection{\texorpdfstring{Details()}{Details()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Doacaos\+Controller.\+Details (\begin{DoxyParamCaption}\item[{int?}]{id }\end{DoxyParamCaption})}
+
+
+
+Método que permite ler todos os detalhes de objeto da classe Doacao, selecionado em view, cujos dados estão guardados em BD 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & ID do objeto da classe Doacao guardado em BD\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+devolve view com todos os detalhes de um ID selecionado presente em BD
+\end{DoxyReturn}
+
+
+Definido na linha 46 do ficheiro Doacaos\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_ab7102dc8c8848fccaddc7c9c190feb09}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_ab7102dc8c8848fccaddc7c9c190feb09}} 
+\index{MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}!DoacaoExists@{DoacaoExists}}
+\index{DoacaoExists@{DoacaoExists}!MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}}
+\doxysubsubsection{\texorpdfstring{DoacaoExists()}{DoacaoExists()}}
+{\footnotesize\ttfamily bool MVC\+\_\+\+MBQ.\+Controllers.\+Doacaos\+Controller.\+Doacao\+Exists (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definido na linha 250 do ficheiro Doacaos\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_a5b69989f0b44ad19e44ca24b089cce4f}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_a5b69989f0b44ad19e44ca24b089cce4f}} 
+\index{MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}!Edit@{Edit}}
+\index{Edit@{Edit}!MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}}
+\doxysubsubsection{\texorpdfstring{Edit()}{Edit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Doacaos\+Controller.\+Edit (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{[}\+Bind(\char`\"{}\+ID,\+Data\+Doacao,\+Evento\+ID,\+Voluntario\+ID\char`\"{})\mbox{]} \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_doacao}{Doacao}}}]{doacao }\end{DoxyParamCaption})}
+
+
+
+POST\+: Doacaos/\+Edit Método que edita objeto do tipo Doacao que se encontra na BD e atualiza a BD To protect from overposting attacks, enable the specific properties you want to bind to. For more details, see \href{http://go.microsoft.com/fwlink/?LinkId=317598}{\texttt{ http\+://go.\+microsoft.\+com/fwlink/?\+Link\+Id=317598}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & id de objeto a ser alterado\\
+\hline
+{\em doacao} & objeto da classe Doacao editado no Formulário\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+View Edit com o objeto editado
+\end{DoxyReturn}
+
+
+Definido na linha 179 do ficheiro Doacaos\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_ab7a772b55c2e311bfb9e7298c9027dac}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_ab7a772b55c2e311bfb9e7298c9027dac}} 
+\index{MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}!Edit@{Edit}}
+\index{Edit@{Edit}!MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}}
+\doxysubsubsection{\texorpdfstring{Edit()}{Edit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Doacaos\+Controller.\+Edit (\begin{DoxyParamCaption}\item[{int?}]{id }\end{DoxyParamCaption})}
+
+
+
+Método que devolve a view Editar do objeto seleccionado da classe Doacao que se encontra em BD 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & ID do objeto escolhido para editar\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+devolve view Edit com formulário para editar o objeto selecionado
+\end{DoxyReturn}
+
+
+Definido na linha 151 do ficheiro Doacaos\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_a1fa4f97ee158a4287cc89914c6856f3c}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_a1fa4f97ee158a4287cc89914c6856f3c}} 
+\index{MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}!Index@{Index}}
+\index{Index@{Index}!MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}}
+\doxysubsubsection{\texorpdfstring{Index()}{Index()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Doacaos\+Controller.\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método da view Index referente ao modelo Doacao 
+
+\begin{DoxyReturn}{Retorna}
+devolve view com lista de Doações presentes em BD
+\end{DoxyReturn}
+
+
+Definido na linha 35 do ficheiro Doacaos\+Controller.\+cs.
+
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_ab23bb2e5a3ebe701a7e3d7bb64264166}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_doacaos_controller_ab23bb2e5a3ebe701a7e3d7bb64264166}} 
+\index{MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}!\_context@{\_context}}
+\index{\_context@{\_context}!MVC\_MBQ.Controllers.DoacaosController@{MVC\_MBQ.Controllers.DoacaosController}}
+\doxysubsubsection{\texorpdfstring{\_context}{\_context}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}} MVC\+\_\+\+MBQ.\+Controllers.\+Doacaos\+Controller.\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+Variável local do tipo App\+Movimento\+BQDb\+Context 
+
+Definido na linha 21 do ficheiro Doacaos\+Controller.\+cs.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/stduser/\+One\+Drive -\/ Instituto Politécnico de Setúbal/\+LW/\+Doc\+Tecnica\+\_\+dados/\+Controllers/\mbox{\hyperlink{_doacaos_controller_8cs}{Doacaos\+Controller.\+cs}}\end{DoxyCompactItemize}

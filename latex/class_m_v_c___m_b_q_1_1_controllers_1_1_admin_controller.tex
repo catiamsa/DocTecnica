@@ -1,0 +1,241 @@
+\hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller}{}\doxysection{Referência à classe MVC\+\_\+\+MBQ.\+Controllers.\+Admin\+Controller}
+\label{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller}\index{MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}}
+
+
+Classe \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller}{Admin\+Controller}}  
+
+
+Diagrama de heranças da classe MVC\+\_\+\+MBQ.\+Controllers.\+Admin\+Controller\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_a5f5a2c9ffe1729102ada5507145b2210}{Admin\+Controller}} (User\+Manager$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}} $>$ usr\+Mgr, IPassword\+Hasher$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}} $>$ password\+Hash, IPassword\+Validator$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}} $>$ password\+Val, IUser\+Validator$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}} $>$ user\+Valid)
+\item 
+IAction\+Result \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_a1c4b91505922941d3775c7516e966810}{Index}} ()
+\begin{DoxyCompactList}\small\item\em Método que devolve view com lista de utilizadores \end{DoxyCompactList}\item 
+View\+Result \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_af78b7c7ba9bee50bb2ba9eeb1cee1e4c}{Create}} ()
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_af3d3ff77819d581fe852df2a35e8276d}{Create}} (\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_user}{User}} user)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_a5fb0273ae2d64a3765840ac6ba49b40d}{Update}} (string id)
+\begin{DoxyCompactList}\small\item\em Método para atualizar Utilizador \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_aae47b80523f03232ebdf766d91bc0aa1}{Update}} (string id, string email, string password)
+\begin{DoxyCompactList}\small\item\em Método Post de utilizador atualizado \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_ae4dac98e22777d6366006fae160d1d74}{Delete}} (string id)
+\begin{DoxyCompactList}\small\item\em Método que apaga utilizador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membros privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_a9b2949a96a75618506e11c9db9b9fb36}{Errors}} (Identity\+Result result)
+\begin{DoxyCompactList}\small\item\em Método para demonstrar erros \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+User\+Manager$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}} $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_a0b2c43dcd74d912b3a653a644e126d2a}{user\+Manager}}
+\item 
+IPassword\+Hasher$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}} $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_a3015a0c0d313c26788875998bb2bb8f3}{password\+Hasher}}
+\item 
+IPassword\+Validator$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}} $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_a804dc3bf58ac267e148b63d076119a66}{password\+Validator}}
+\item 
+IUser\+Validator$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}} $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_ae4192ed8682c91b2c0f29558bd8736dd}{user\+Validator}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller}{Admin\+Controller}} 
+
+
+
+Definido na linha 14 do ficheiro Admin\+Controller.\+cs.
+
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_a5f5a2c9ffe1729102ada5507145b2210}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_a5f5a2c9ffe1729102ada5507145b2210}} 
+\index{MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}!AdminController@{AdminController}}
+\index{AdminController@{AdminController}!MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}}
+\doxysubsubsection{\texorpdfstring{AdminController()}{AdminController()}}
+{\footnotesize\ttfamily MVC\+\_\+\+MBQ.\+Controllers.\+Admin\+Controller.\+Admin\+Controller (\begin{DoxyParamCaption}\item[{User\+Manager$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}} $>$}]{usr\+Mgr,  }\item[{IPassword\+Hasher$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}} $>$}]{password\+Hash,  }\item[{IPassword\+Validator$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}} $>$}]{password\+Val,  }\item[{IUser\+Validator$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}} $>$}]{user\+Valid }\end{DoxyParamCaption})}
+
+
+
+Definido na linha 28 do ficheiro Admin\+Controller.\+cs.
+
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_af78b7c7ba9bee50bb2ba9eeb1cee1e4c}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_af78b7c7ba9bee50bb2ba9eeb1cee1e4c}} 
+\index{MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}!Create@{Create}}
+\index{Create@{Create}!MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily View\+Result MVC\+\_\+\+MBQ.\+Controllers.\+Admin\+Controller.\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_af3d3ff77819d581fe852df2a35e8276d}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_af3d3ff77819d581fe852df2a35e8276d}} 
+\index{MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}!Create@{Create}}
+\index{Create@{Create}!MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Admin\+Controller.\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_user}{User}}}]{user }\end{DoxyParamCaption})}
+
+
+
+Definido na linha 48 do ficheiro Admin\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_ae4dac98e22777d6366006fae160d1d74}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_ae4dac98e22777d6366006fae160d1d74}} 
+\index{MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}!Delete@{Delete}}
+\index{Delete@{Delete}!MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Admin\+Controller.\+Delete (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+Método que apaga utilizador. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & id de utilizador a apagar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+
+
+Definido na linha 264 do ficheiro Admin\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_a9b2949a96a75618506e11c9db9b9fb36}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_a9b2949a96a75618506e11c9db9b9fb36}} 
+\index{MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}!Errors@{Errors}}
+\index{Errors@{Errors}!MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}}
+\doxysubsubsection{\texorpdfstring{Errors()}{Errors()}}
+{\footnotesize\ttfamily void MVC\+\_\+\+MBQ.\+Controllers.\+Admin\+Controller.\+Errors (\begin{DoxyParamCaption}\item[{Identity\+Result}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Método para demonstrar erros 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em result} & Resultado obtido do tipo Identity\+Result\\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha 283 do ficheiro Admin\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_a1c4b91505922941d3775c7516e966810}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_a1c4b91505922941d3775c7516e966810}} 
+\index{MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}!Index@{Index}}
+\index{Index@{Index}!MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}}
+\doxysubsubsection{\texorpdfstring{Index()}{Index()}}
+{\footnotesize\ttfamily IAction\+Result MVC\+\_\+\+MBQ.\+Controllers.\+Admin\+Controller.\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que devolve view com lista de utilizadores 
+
+\begin{DoxyReturn}{Retorna}
+View com utilizadores
+\end{DoxyReturn}
+
+
+Definido na linha 40 do ficheiro Admin\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_a5fb0273ae2d64a3765840ac6ba49b40d}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_a5fb0273ae2d64a3765840ac6ba49b40d}} 
+\index{MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}!Update@{Update}}
+\index{Update@{Update}!MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Admin\+Controller.\+Update (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+Método para atualizar Utilizador 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & id de utilizador\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+
+
+Definido na linha 112 do ficheiro Admin\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_aae47b80523f03232ebdf766d91bc0aa1}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_aae47b80523f03232ebdf766d91bc0aa1}} 
+\index{MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}!Update@{Update}}
+\index{Update@{Update}!MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Admin\+Controller.\+Update (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{string}]{email,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+Método Post de utilizador atualizado 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & Id de utilizador atualizado\\
+\hline
+{\em email} & novo email inserido\\
+\hline
+{\em password} & nova password inserida\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+
+
+Definido na linha 159 do ficheiro Admin\+Controller.\+cs.
+
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_a3015a0c0d313c26788875998bb2bb8f3}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_a3015a0c0d313c26788875998bb2bb8f3}} 
+\index{MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}!passwordHasher@{passwordHasher}}
+\index{passwordHasher@{passwordHasher}!MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}}
+\doxysubsubsection{\texorpdfstring{passwordHasher}{passwordHasher}}
+{\footnotesize\ttfamily IPassword\+Hasher$<$\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}}$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Admin\+Controller.\+password\+Hasher\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definido na linha 18 do ficheiro Admin\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_a804dc3bf58ac267e148b63d076119a66}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_a804dc3bf58ac267e148b63d076119a66}} 
+\index{MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}!passwordValidator@{passwordValidator}}
+\index{passwordValidator@{passwordValidator}!MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}}
+\doxysubsubsection{\texorpdfstring{passwordValidator}{passwordValidator}}
+{\footnotesize\ttfamily IPassword\+Validator$<$\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}}$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Admin\+Controller.\+password\+Validator\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definido na linha 19 do ficheiro Admin\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_a0b2c43dcd74d912b3a653a644e126d2a}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_a0b2c43dcd74d912b3a653a644e126d2a}} 
+\index{MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}!userManager@{userManager}}
+\index{userManager@{userManager}!MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}}
+\doxysubsubsection{\texorpdfstring{userManager}{userManager}}
+{\footnotesize\ttfamily User\+Manager$<$\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}}$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Admin\+Controller.\+user\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definido na linha 17 do ficheiro Admin\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_ae4192ed8682c91b2c0f29558bd8736dd}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_admin_controller_ae4192ed8682c91b2c0f29558bd8736dd}} 
+\index{MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}!userValidator@{userValidator}}
+\index{userValidator@{userValidator}!MVC\_MBQ.Controllers.AdminController@{MVC\_MBQ.Controllers.AdminController}}
+\doxysubsubsection{\texorpdfstring{userValidator}{userValidator}}
+{\footnotesize\ttfamily IUser\+Validator$<$\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_user}{App\+User}}$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Admin\+Controller.\+user\+Validator\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definido na linha 20 do ficheiro Admin\+Controller.\+cs.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/stduser/\+One\+Drive -\/ Instituto Politécnico de Setúbal/\+LW/\+Doc\+Tecnica\+\_\+dados/\+Controllers/\mbox{\hyperlink{_admin_controller_8cs}{Admin\+Controller.\+cs}}\end{DoxyCompactItemize}

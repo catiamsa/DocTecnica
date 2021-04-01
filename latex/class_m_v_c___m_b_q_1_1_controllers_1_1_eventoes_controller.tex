@@ -1,0 +1,259 @@
+\hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller}{}\doxysection{Referência à classe MVC\+\_\+\+MBQ.\+Controllers.\+Eventoes\+Controller}
+\label{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller}\index{MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}}
+
+
+Controller relativo ao Modelo Evento. Fornece/\+Implementa todos os métodos relativos a acções CRUD  
+
+
+Diagrama de heranças da classe MVC\+\_\+\+MBQ.\+Controllers.\+Eventoes\+Controller\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_a5ae7fd2915359044328a6f444efea65e}{Eventoes\+Controller}} (\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}} context)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_a41499ec4c74c07317afcfe4ca239f0d2}{Index}} ()
+\begin{DoxyCompactList}\small\item\em Método da view Index referente ao modelo Evento \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_ab0bde39a715a0a485321759f0e8cf4e4}{Details}} (int? id)
+\item 
+IAction\+Result \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_a944500cc19982ac84692c1bcffb199ba}{Create}} ()
+\begin{DoxyCompactList}\small\item\em Método que devolve a view Create do modelo Evento \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_a6becd1b1c4cf7ebbe289bfea1ca7a148}{Create}} (\mbox{[}Bind(\char`\"{}ID,Nome\+Evento,Telemovel,Email,Descricao,Data\+Evento\char`\"{})\mbox{]} Evento evento)
+\begin{DoxyCompactList}\small\item\em POST\+: Eventos/\+Create Método que adiciona objeto Evento criado na BD To protect from overposting attacks, enable the specific properties you want to bind to. For more details, see \href{http://go.microsoft.com/fwlink/?LinkId=317598}{\texttt{ http\+://go.\+microsoft.\+com/fwlink/?\+Link\+Id=317598}}. \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_afae9402f5f6429138a8f01a16a268307}{Edit}} (int? id)
+\begin{DoxyCompactList}\small\item\em Método que devolve a view Editar do objeto seleccionado da classe Evento que se encontra em BD \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_a0526794d1489160444adf6bfe43f8a4e}{Edit}} (int id, \mbox{[}Bind(\char`\"{}ID,Nome\+Evento,Telemovel,Email,Descricao\char`\"{})\mbox{]} Evento evento)
+\begin{DoxyCompactList}\small\item\em POST\+: Eventoes/\+Edit Método que edita objeto do tipo Evento que se encontra na BD e atualiza a BD To protect from overposting attacks, enable the specific properties you want to bind to. For more details, see \href{http://go.microsoft.com/fwlink/?LinkId=317598}{\texttt{ http\+://go.\+microsoft.\+com/fwlink/?\+Link\+Id=317598}}. \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_adb9bd335c17aa1a22ef5b5d02b719b8b}{Delete}} (int? id)
+\begin{DoxyCompactList}\small\item\em Método que devolve a view Delete com objeto da classe Evento selecionado e que se encontra guardado em BD \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_ac32dd6881dd4ca96998841a1a420834e}{Delete\+Confirmed}} (int id)
+\begin{DoxyCompactList}\small\item\em Método que apaga objeto selecionado e atualiza a BD \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membros privados}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_aa341008cc36ba93e731bfb6c15b1deef}{Evento\+Exists}} (int id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}} \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_a45d7e64de3771911b53c1f6fa65d7878}{\+\_\+context}}
+\begin{DoxyCompactList}\small\item\em Método que cria variável local com atribuição do objeto da classe App\+Movimento\+BDQContext \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Controller relativo ao Modelo Evento. Fornece/\+Implementa todos os métodos relativos a acções CRUD 
+
+
+
+Definido na linha 16 do ficheiro Eventoes\+Controller.\+cs.
+
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_a5ae7fd2915359044328a6f444efea65e}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_a5ae7fd2915359044328a6f444efea65e}} 
+\index{MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}!EventoesController@{EventoesController}}
+\index{EventoesController@{EventoesController}!MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}}
+\doxysubsubsection{\texorpdfstring{EventoesController()}{EventoesController()}}
+{\footnotesize\ttfamily MVC\+\_\+\+MBQ.\+Controllers.\+Eventoes\+Controller.\+Eventoes\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}}}]{context }\end{DoxyParamCaption})}
+
+
+
+Definido na linha 23 do ficheiro Eventoes\+Controller.\+cs.
+
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_a944500cc19982ac84692c1bcffb199ba}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_a944500cc19982ac84692c1bcffb199ba}} 
+\index{MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}!Create@{Create}}
+\index{Create@{Create}!MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily IAction\+Result MVC\+\_\+\+MBQ.\+Controllers.\+Eventoes\+Controller.\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que devolve a view Create do modelo Evento 
+
+\begin{DoxyReturn}{Retorna}
+devolve view com formulário para criar o objeto da classe Evento
+\end{DoxyReturn}
+
+
+Definido na linha 63 do ficheiro Eventoes\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_a6becd1b1c4cf7ebbe289bfea1ca7a148}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_a6becd1b1c4cf7ebbe289bfea1ca7a148}} 
+\index{MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}!Create@{Create}}
+\index{Create@{Create}!MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Eventoes\+Controller.\+Create (\begin{DoxyParamCaption}\item[{\mbox{[}\+Bind(\char`\"{}\+ID,\+Nome\+Evento,\+Telemovel,\+Email,\+Descricao,\+Data\+Evento\char`\"{})\mbox{]} \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_evento}{Evento}}}]{evento }\end{DoxyParamCaption})}
+
+
+
+POST\+: Eventos/\+Create Método que adiciona objeto Evento criado na BD To protect from overposting attacks, enable the specific properties you want to bind to. For more details, see \href{http://go.microsoft.com/fwlink/?LinkId=317598}{\texttt{ http\+://go.\+microsoft.\+com/fwlink/?\+Link\+Id=317598}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em evento} & objeto da classe Evento criado no Formulário\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+View Create com o objeto criado
+\end{DoxyReturn}
+
+
+Definido na linha 78 do ficheiro Eventoes\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_adb9bd335c17aa1a22ef5b5d02b719b8b}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_adb9bd335c17aa1a22ef5b5d02b719b8b}} 
+\index{MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}!Delete@{Delete}}
+\index{Delete@{Delete}!MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Eventoes\+Controller.\+Delete (\begin{DoxyParamCaption}\item[{int?}]{id }\end{DoxyParamCaption})}
+
+
+
+Método que devolve a view Delete com objeto da classe Evento selecionado e que se encontra guardado em BD 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & ID do objeto escolhido para apagar\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+devolve view com formulário para apagar o objeto selecionado da classe Evento
+\end{DoxyReturn}
+
+
+Definido na linha 155 do ficheiro Eventoes\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_ac32dd6881dd4ca96998841a1a420834e}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_ac32dd6881dd4ca96998841a1a420834e}} 
+\index{MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}!DeleteConfirmed@{DeleteConfirmed}}
+\index{DeleteConfirmed@{DeleteConfirmed}!MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}}
+\doxysubsubsection{\texorpdfstring{DeleteConfirmed()}{DeleteConfirmed()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Eventoes\+Controller.\+Delete\+Confirmed (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Método que apaga objeto selecionado e atualiza a BD 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & ID do objeto escolhido para apagar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+devolve view Index
+\end{DoxyReturn}
+
+
+Definido na linha 179 do ficheiro Eventoes\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_ab0bde39a715a0a485321759f0e8cf4e4}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_ab0bde39a715a0a485321759f0e8cf4e4}} 
+\index{MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}!Details@{Details}}
+\index{Details@{Details}!MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}}
+\doxysubsubsection{\texorpdfstring{Details()}{Details()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Eventoes\+Controller.\+Details (\begin{DoxyParamCaption}\item[{int?}]{id }\end{DoxyParamCaption})}
+
+
+
+Definido na linha 42 do ficheiro Eventoes\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_a0526794d1489160444adf6bfe43f8a4e}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_a0526794d1489160444adf6bfe43f8a4e}} 
+\index{MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}!Edit@{Edit}}
+\index{Edit@{Edit}!MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}}
+\doxysubsubsection{\texorpdfstring{Edit()}{Edit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Eventoes\+Controller.\+Edit (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{[}\+Bind(\char`\"{}\+ID,\+Nome\+Evento,\+Telemovel,\+Email,\+Descricao\char`\"{})\mbox{]} \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_evento}{Evento}}}]{evento }\end{DoxyParamCaption})}
+
+
+
+POST\+: Eventoes/\+Edit Método que edita objeto do tipo Evento que se encontra na BD e atualiza a BD To protect from overposting attacks, enable the specific properties you want to bind to. For more details, see \href{http://go.microsoft.com/fwlink/?LinkId=317598}{\texttt{ http\+://go.\+microsoft.\+com/fwlink/?\+Link\+Id=317598}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & id de objeto a ser alterado\\
+\hline
+{\em evento} & objeto da classe Evento editado no Formulário\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+View Edit com o objeto editado
+\end{DoxyReturn}
+
+
+Definido na linha 120 do ficheiro Eventoes\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_afae9402f5f6429138a8f01a16a268307}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_afae9402f5f6429138a8f01a16a268307}} 
+\index{MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}!Edit@{Edit}}
+\index{Edit@{Edit}!MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}}
+\doxysubsubsection{\texorpdfstring{Edit()}{Edit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Eventoes\+Controller.\+Edit (\begin{DoxyParamCaption}\item[{int?}]{id }\end{DoxyParamCaption})}
+
+
+
+Método que devolve a view Editar do objeto seleccionado da classe Evento que se encontra em BD 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & ID do objeto escolhido para editar\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+devolve view Edit com formulário para editar o objeto selecionado
+\end{DoxyReturn}
+
+
+Definido na linha 94 do ficheiro Eventoes\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_aa341008cc36ba93e731bfb6c15b1deef}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_aa341008cc36ba93e731bfb6c15b1deef}} 
+\index{MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}!EventoExists@{EventoExists}}
+\index{EventoExists@{EventoExists}!MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}}
+\doxysubsubsection{\texorpdfstring{EventoExists()}{EventoExists()}}
+{\footnotesize\ttfamily bool MVC\+\_\+\+MBQ.\+Controllers.\+Eventoes\+Controller.\+Evento\+Exists (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definido na linha 187 do ficheiro Eventoes\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_a41499ec4c74c07317afcfe4ca239f0d2}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_a41499ec4c74c07317afcfe4ca239f0d2}} 
+\index{MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}!Index@{Index}}
+\index{Index@{Index}!MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}}
+\doxysubsubsection{\texorpdfstring{Index()}{Index()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Eventoes\+Controller.\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método da view Index referente ao modelo Evento 
+
+\begin{DoxyReturn}{Retorna}
+devolve view com lista de eventos realizados e presentes em BD
+\end{DoxyReturn}
+summary$>$ Método que permite ler todos os detalhes de objeto da classe Evento, selecionado em view, cujos dados estão guardados em BD /summary$>$ param name=\char`\"{}id\char`\"{}$>$ID do objeto da classe Evento guardado em BD
+
+returns$>$devolve view com todos os detalhes de um ID selecionado presente em BD
+
+Definido na linha 32 do ficheiro Eventoes\+Controller.\+cs.
+
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_a45d7e64de3771911b53c1f6fa65d7878}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_eventoes_controller_a45d7e64de3771911b53c1f6fa65d7878}} 
+\index{MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}!\_context@{\_context}}
+\index{\_context@{\_context}!MVC\_MBQ.Controllers.EventoesController@{MVC\_MBQ.Controllers.EventoesController}}
+\doxysubsubsection{\texorpdfstring{\_context}{\_context}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}} MVC\+\_\+\+MBQ.\+Controllers.\+Eventoes\+Controller.\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Método que cria variável local com atribuição do objeto da classe App\+Movimento\+BDQContext 
+
+
+
+Definido na linha 21 do ficheiro Eventoes\+Controller.\+cs.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/stduser/\+One\+Drive -\/ Instituto Politécnico de Setúbal/\+LW/\+Doc\+Tecnica\+\_\+dados/\+Controllers/\mbox{\hyperlink{_eventoes_controller_8cs}{Eventoes\+Controller.\+cs}}\end{DoxyCompactItemize}

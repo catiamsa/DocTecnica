@@ -1,0 +1,259 @@
+\hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller}{}\doxysection{Referência à classe MVC\+\_\+\+MBQ.\+Controllers.\+Produtos\+Controller}
+\label{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller}\index{MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}}
+
+
+Controller relativo ao Modelo Produto. Fornece/\+Implementa todos os métodos relativos a acções CRUD  
+
+
+Diagrama de heranças da classe MVC\+\_\+\+MBQ.\+Controllers.\+Produtos\+Controller\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a713d63bb67a850c846f1db84347f386a}{Produtos\+Controller}} (\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}} context)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a428522ec8d5bdcc2d68695e4f4e653f0}{Index}} ()
+\begin{DoxyCompactList}\small\item\em Método da view Index referente ao modelo Produto \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_af2e48c342952b160c927079bc2e914cf}{Details}} (int? id)
+\item 
+IAction\+Result \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a63f712e7f8a8c63db70b6e960d61a296}{Create}} ()
+\begin{DoxyCompactList}\small\item\em Método que devolve a view Create do modelo Produto \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a7a741bc83f49c94a7e93c8a644b282c0}{Create}} (\mbox{[}Bind(\char`\"{}ID,Nome\+Produto,Quantidade\+Minima,Categoria\+ID\char`\"{})\mbox{]} Produto produto)
+\begin{DoxyCompactList}\small\item\em POST\+: Produtos/\+Create Método que adiciona objeto Produto adicionando à BD Valida Anti\+Forgery\+Token. Caso não validado não executa ação To protect from overposting attacks, enable the specific properties you want to bind to. For more details, see \href{http://go.microsoft.com/fwlink/?LinkId=317598}{\texttt{ http\+://go.\+microsoft.\+com/fwlink/?\+Link\+Id=317598}}. \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a8a7e22c58700e61f2831d7f77f2fb4d0}{Edit}} (int? id)
+\begin{DoxyCompactList}\small\item\em Método que devolve a view Editar do objeto seleccionado da classe Produto que se encontra em BD \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a268eb8db68ceee1b314ad0a71564aef2}{Edit}} (int id, \mbox{[}Bind(\char`\"{}ID,Nome\+Produto,Quantidade\+Minima,Categoria\+ID,Nome\+Categoria\char`\"{})\mbox{]} Produto produto)
+\begin{DoxyCompactList}\small\item\em POST\+: Produtos/\+Edit Método que edita objeto do tipo Produto que se encontra na BD e atualiza a BD To protect from overposting attacks, enable the specific properties you want to bind to. For more details, see \href{http://go.microsoft.com/fwlink/?LinkId=317598}{\texttt{ http\+://go.\+microsoft.\+com/fwlink/?\+Link\+Id=317598}}. \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_ace4ba0b82e55e08a3adbca98ca9f94c1}{Delete}} (int? id)
+\begin{DoxyCompactList}\small\item\em Método que devolve a view Delete com objeto da classe Produto selecionado e que se encontra guardado em BD \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a4892789f11c74f8b800ec85aac35a9da}{Delete\+Confirmed}} (int id)
+\begin{DoxyCompactList}\small\item\em Método que apaga objeto selecionado e atualiza a BD \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membros privados}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a7b06431ca78079bbd2f06b0e767236cc}{Produto\+Exists}} (int id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}} \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_add162eea15ff098dd6285abc45447f40}{\+\_\+context}}
+\begin{DoxyCompactList}\small\item\em Método que cria variável local com atribuição do objeto da classe App\+Movimento\+BDQContext \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Controller relativo ao Modelo Produto. Fornece/\+Implementa todos os métodos relativos a acções CRUD 
+
+
+
+Definido na linha 16 do ficheiro Produtos\+Controller.\+cs.
+
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a713d63bb67a850c846f1db84347f386a}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a713d63bb67a850c846f1db84347f386a}} 
+\index{MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}!ProdutosController@{ProdutosController}}
+\index{ProdutosController@{ProdutosController}!MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}}
+\doxysubsubsection{\texorpdfstring{ProdutosController()}{ProdutosController()}}
+{\footnotesize\ttfamily MVC\+\_\+\+MBQ.\+Controllers.\+Produtos\+Controller.\+Produtos\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}}}]{context }\end{DoxyParamCaption})}
+
+
+
+Definido na linha 23 do ficheiro Produtos\+Controller.\+cs.
+
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a63f712e7f8a8c63db70b6e960d61a296}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a63f712e7f8a8c63db70b6e960d61a296}} 
+\index{MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}!Create@{Create}}
+\index{Create@{Create}!MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily IAction\+Result MVC\+\_\+\+MBQ.\+Controllers.\+Produtos\+Controller.\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que devolve a view Create do modelo Produto 
+
+\begin{DoxyReturn}{Retorna}
+devolve view com formulário para criar o objeto da classe Produto
+\end{DoxyReturn}
+
+
+Definido na linha 65 do ficheiro Produtos\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a7a741bc83f49c94a7e93c8a644b282c0}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a7a741bc83f49c94a7e93c8a644b282c0}} 
+\index{MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}!Create@{Create}}
+\index{Create@{Create}!MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Produtos\+Controller.\+Create (\begin{DoxyParamCaption}\item[{\mbox{[}\+Bind(\char`\"{}\+ID,\+Nome\+Produto,\+Quantidade\+Minima,\+Categoria\+ID\char`\"{})\mbox{]} \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_produto}{Produto}}}]{produto }\end{DoxyParamCaption})}
+
+
+
+POST\+: Produtos/\+Create Método que adiciona objeto Produto adicionando à BD Valida Anti\+Forgery\+Token. Caso não validado não executa ação To protect from overposting attacks, enable the specific properties you want to bind to. For more details, see \href{http://go.microsoft.com/fwlink/?LinkId=317598}{\texttt{ http\+://go.\+microsoft.\+com/fwlink/?\+Link\+Id=317598}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em produto} & objeto da classe Produto criado no Formulário\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+View Create com o objeto criado
+\end{DoxyReturn}
+
+
+Definido na linha 87 do ficheiro Produtos\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_ace4ba0b82e55e08a3adbca98ca9f94c1}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_ace4ba0b82e55e08a3adbca98ca9f94c1}} 
+\index{MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}!Delete@{Delete}}
+\index{Delete@{Delete}!MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Produtos\+Controller.\+Delete (\begin{DoxyParamCaption}\item[{int?}]{id }\end{DoxyParamCaption})}
+
+
+
+Método que devolve a view Delete com objeto da classe Produto selecionado e que se encontra guardado em BD 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & ID do objeto escolhido para apagar\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+devolve view com formulário para apagar o objeto selecionado da classe Produto
+\end{DoxyReturn}
+
+
+Definido na linha 167 do ficheiro Produtos\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a4892789f11c74f8b800ec85aac35a9da}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a4892789f11c74f8b800ec85aac35a9da}} 
+\index{MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}!DeleteConfirmed@{DeleteConfirmed}}
+\index{DeleteConfirmed@{DeleteConfirmed}!MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}}
+\doxysubsubsection{\texorpdfstring{DeleteConfirmed()}{DeleteConfirmed()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Produtos\+Controller.\+Delete\+Confirmed (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Método que apaga objeto selecionado e atualiza a BD 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & ID do objeto escolhido para apagar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+devolve view Index
+\end{DoxyReturn}
+
+
+Definido na linha 192 do ficheiro Produtos\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_af2e48c342952b160c927079bc2e914cf}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_af2e48c342952b160c927079bc2e914cf}} 
+\index{MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}!Details@{Details}}
+\index{Details@{Details}!MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}}
+\doxysubsubsection{\texorpdfstring{Details()}{Details()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Produtos\+Controller.\+Details (\begin{DoxyParamCaption}\item[{int?}]{id }\end{DoxyParamCaption})}
+
+
+
+Definido na linha 43 do ficheiro Produtos\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a268eb8db68ceee1b314ad0a71564aef2}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a268eb8db68ceee1b314ad0a71564aef2}} 
+\index{MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}!Edit@{Edit}}
+\index{Edit@{Edit}!MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}}
+\doxysubsubsection{\texorpdfstring{Edit()}{Edit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Produtos\+Controller.\+Edit (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{[}\+Bind(\char`\"{}\+ID,\+Nome\+Produto,\+Quantidade\+Minima,\+Categoria\+ID,\+Nome\+Categoria\char`\"{})\mbox{]} \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_produto}{Produto}}}]{produto }\end{DoxyParamCaption})}
+
+
+
+POST\+: Produtos/\+Edit Método que edita objeto do tipo Produto que se encontra na BD e atualiza a BD To protect from overposting attacks, enable the specific properties you want to bind to. For more details, see \href{http://go.microsoft.com/fwlink/?LinkId=317598}{\texttt{ http\+://go.\+microsoft.\+com/fwlink/?\+Link\+Id=317598}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & id de objeto a ser alterado\\
+\hline
+{\em categoria} & objeto da classe Produto editado no Formulário\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+View Edit com o objeto editado
+\end{DoxyReturn}
+
+
+Definido na linha 131 do ficheiro Produtos\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a8a7e22c58700e61f2831d7f77f2fb4d0}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a8a7e22c58700e61f2831d7f77f2fb4d0}} 
+\index{MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}!Edit@{Edit}}
+\index{Edit@{Edit}!MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}}
+\doxysubsubsection{\texorpdfstring{Edit()}{Edit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Produtos\+Controller.\+Edit (\begin{DoxyParamCaption}\item[{int?}]{id }\end{DoxyParamCaption})}
+
+
+
+Método que devolve a view Editar do objeto seleccionado da classe Produto que se encontra em BD 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & ID do objeto escolhido para editar\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+devolve view Edit com formulário para editar o objeto selecionado
+\end{DoxyReturn}
+
+
+Definido na linha 104 do ficheiro Produtos\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a428522ec8d5bdcc2d68695e4f4e653f0}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a428522ec8d5bdcc2d68695e4f4e653f0}} 
+\index{MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}!Index@{Index}}
+\index{Index@{Index}!MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}}
+\doxysubsubsection{\texorpdfstring{Index()}{Index()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Produtos\+Controller.\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método da view Index referente ao modelo Produto 
+
+\begin{DoxyReturn}{Retorna}
+devolve view com lista de produtos registados e presentes em BD
+\end{DoxyReturn}
+summary$>$ Método que permite ler todos os detalhes de objeto da classe Produto, selecionado em view, cujos dados estão guardados em BD /summary$>$ param name=\char`\"{}id\char`\"{}$>$ID do objeto da classe Produto guardado em BD
+
+returns$>$devolve view com todos os detalhes de um ID selecionado presente em BD
+
+Definido na linha 32 do ficheiro Produtos\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a7b06431ca78079bbd2f06b0e767236cc}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_a7b06431ca78079bbd2f06b0e767236cc}} 
+\index{MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}!ProdutoExists@{ProdutoExists}}
+\index{ProdutoExists@{ProdutoExists}!MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}}
+\doxysubsubsection{\texorpdfstring{ProdutoExists()}{ProdutoExists()}}
+{\footnotesize\ttfamily bool MVC\+\_\+\+MBQ.\+Controllers.\+Produtos\+Controller.\+Produto\+Exists (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definido na linha 200 do ficheiro Produtos\+Controller.\+cs.
+
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_add162eea15ff098dd6285abc45447f40}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_produtos_controller_add162eea15ff098dd6285abc45447f40}} 
+\index{MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}!\_context@{\_context}}
+\index{\_context@{\_context}!MVC\_MBQ.Controllers.ProdutosController@{MVC\_MBQ.Controllers.ProdutosController}}
+\doxysubsubsection{\texorpdfstring{\_context}{\_context}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}} MVC\+\_\+\+MBQ.\+Controllers.\+Produtos\+Controller.\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Método que cria variável local com atribuição do objeto da classe App\+Movimento\+BDQContext 
+
+
+
+Definido na linha 21 do ficheiro Produtos\+Controller.\+cs.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/stduser/\+One\+Drive -\/ Instituto Politécnico de Setúbal/\+LW/\+Doc\+Tecnica\+\_\+dados/\+Controllers/\mbox{\hyperlink{_produtos_controller_8cs}{Produtos\+Controller.\+cs}}\end{DoxyCompactItemize}

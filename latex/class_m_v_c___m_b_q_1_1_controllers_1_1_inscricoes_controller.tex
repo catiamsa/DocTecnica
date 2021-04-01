@@ -1,0 +1,259 @@
+\hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller}{}\doxysection{Referência à classe MVC\+\_\+\+MBQ.\+Controllers.\+Inscricoes\+Controller}
+\label{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller}\index{MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}}
+
+
+Controller relativo ao Modelo Inscricao. Fornece/\+Implementa todos os métodos relativos a acções CRUD  
+
+
+Diagrama de heranças da classe MVC\+\_\+\+MBQ.\+Controllers.\+Inscricoes\+Controller\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_ad4bf12a356f3b318d022250d905b2d18}{Inscricoes\+Controller}} (\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}} context)
+\begin{DoxyCompactList}\small\item\em Método que cria variável local com atribuição do objeto da classe App\+Movimento\+BDQContext \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_ab42dd6ae6e3c42b228bdb05abda5cd3c}{Index}} ()
+\begin{DoxyCompactList}\small\item\em Método da view Index referente ao modelo Inscricao \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a4ff18bda5e432b3ffb914f8e3e5413eb}{Details}} (int? id)
+\item 
+IAction\+Result \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_aa02d9e963a7d15cd0d1eee4ec8db8ef7}{Create}} ()
+\begin{DoxyCompactList}\small\item\em Método que devolve a view Create do modelo View\+Model\+Nova\+Inscricao obtém dados da BD e atribui a lista de eventos e voluntarios \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a60932569641eadd9eaf2c75c653f6e21}{Create}} (\mbox{[}Bind(\char`\"{}ID,Data\+Inscrição,Voluntario\+ID,Evento\+ID\char`\"{})\mbox{]} Inscricao inscricao)
+\begin{DoxyCompactList}\small\item\em POST\+: Inscricoes/\+Create Método que adiciona objeto Inscricao adicionando à BD To protect from overposting attacks, enable the specific properties you want to bind to. For more details, see \href{http://go.microsoft.com/fwlink/?LinkId=317598}{\texttt{ http\+://go.\+microsoft.\+com/fwlink/?\+Link\+Id=317598}}. \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a398e508cfa4c8c886bde1543141f880a}{Edit}} (int? id)
+\begin{DoxyCompactList}\small\item\em Método que devolve a view Editar do objeto seleccionado da classe Inscricao que se encontra em BD \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a16a8f415833aa1876c21d3d328054ba0}{Edit}} (int id, \mbox{[}Bind(\char`\"{}ID,Data\+Inscrição,Voluntario\+ID,Evento\+ID\char`\"{})\mbox{]} Inscricao inscricao)
+\begin{DoxyCompactList}\small\item\em POST\+: Inscricoes/\+Edit Método que edita objeto do tipo Inscricao que se encontra na BD e atualiza a BD To protect from overposting attacks, enable the specific properties you want to bind to. For more details, see \href{http://go.microsoft.com/fwlink/?LinkId=317598}{\texttt{ http\+://go.\+microsoft.\+com/fwlink/?\+Link\+Id=317598}}. \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a477008f49e85e36c11561746260b6855}{Delete}} (int? id)
+\begin{DoxyCompactList}\small\item\em Método que devolve a view Delete com objeto da classe Inscricao selecionado e que se encontra guardado em BD \end{DoxyCompactList}\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a7dd870df4bf8a33171c24041a04e206e}{Delete\+Confirmed}} (int id)
+\begin{DoxyCompactList}\small\item\em Método que apaga objeto selecionado e atualiza a BD \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membros privados}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a8e277d47e83ccd7b650d7039528a8c0e}{Inscricao\+Exists}} (int id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}} \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a91c25b46d1cde27fe9d00a32265a619d}{\+\_\+context}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Controller relativo ao Modelo Inscricao. Fornece/\+Implementa todos os métodos relativos a acções CRUD 
+
+
+
+Definido na linha 16 do ficheiro Inscricoes\+Controller.\+cs.
+
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_ad4bf12a356f3b318d022250d905b2d18}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_ad4bf12a356f3b318d022250d905b2d18}} 
+\index{MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}!InscricoesController@{InscricoesController}}
+\index{InscricoesController@{InscricoesController}!MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}}
+\doxysubsubsection{\texorpdfstring{InscricoesController()}{InscricoesController()}}
+{\footnotesize\ttfamily MVC\+\_\+\+MBQ.\+Controllers.\+Inscricoes\+Controller.\+Inscricoes\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}}}]{context }\end{DoxyParamCaption})}
+
+
+
+Método que cria variável local com atribuição do objeto da classe App\+Movimento\+BDQContext 
+
+
+
+Definido na linha 23 do ficheiro Inscricoes\+Controller.\+cs.
+
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_aa02d9e963a7d15cd0d1eee4ec8db8ef7}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_aa02d9e963a7d15cd0d1eee4ec8db8ef7}} 
+\index{MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}!Create@{Create}}
+\index{Create@{Create}!MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily IAction\+Result MVC\+\_\+\+MBQ.\+Controllers.\+Inscricoes\+Controller.\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método que devolve a view Create do modelo View\+Model\+Nova\+Inscricao obtém dados da BD e atribui a lista de eventos e voluntarios 
+
+\begin{DoxyReturn}{Retorna}
+devolve view com formulário para criar o objeto da classe View\+Model\+Nova\+Inscricao
+\end{DoxyReturn}
+
+
+Definido na linha 67 do ficheiro Inscricoes\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a60932569641eadd9eaf2c75c653f6e21}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a60932569641eadd9eaf2c75c653f6e21}} 
+\index{MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}!Create@{Create}}
+\index{Create@{Create}!MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Inscricoes\+Controller.\+Create (\begin{DoxyParamCaption}\item[{\mbox{[}\+Bind(\char`\"{}\+ID,\+Data\+Inscrição,\+Voluntario\+ID,\+Evento\+ID\char`\"{})\mbox{]} \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_inscricao}{Inscricao}}}]{inscricao }\end{DoxyParamCaption})}
+
+
+
+POST\+: Inscricoes/\+Create Método que adiciona objeto Inscricao adicionando à BD To protect from overposting attacks, enable the specific properties you want to bind to. For more details, see \href{http://go.microsoft.com/fwlink/?LinkId=317598}{\texttt{ http\+://go.\+microsoft.\+com/fwlink/?\+Link\+Id=317598}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em inscricao} & objeto da classe Inscricao criado no Formulário\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+View Create com o objeto criado
+\end{DoxyReturn}
+
+
+Definido na linha 92 do ficheiro Inscricoes\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a477008f49e85e36c11561746260b6855}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a477008f49e85e36c11561746260b6855}} 
+\index{MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}!Delete@{Delete}}
+\index{Delete@{Delete}!MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Inscricoes\+Controller.\+Delete (\begin{DoxyParamCaption}\item[{int?}]{id }\end{DoxyParamCaption})}
+
+
+
+Método que devolve a view Delete com objeto da classe Inscricao selecionado e que se encontra guardado em BD 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & ID do objeto escolhido para apagar\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+devolve view com formulário para apagar o objeto selecionado da classe Inscricao
+\end{DoxyReturn}
+
+
+Definido na linha 174 do ficheiro Inscricoes\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a7dd870df4bf8a33171c24041a04e206e}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a7dd870df4bf8a33171c24041a04e206e}} 
+\index{MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}!DeleteConfirmed@{DeleteConfirmed}}
+\index{DeleteConfirmed@{DeleteConfirmed}!MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}}
+\doxysubsubsection{\texorpdfstring{DeleteConfirmed()}{DeleteConfirmed()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Inscricoes\+Controller.\+Delete\+Confirmed (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Método que apaga objeto selecionado e atualiza a BD 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & ID do objeto escolhido para apagar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+devolve view Index
+\end{DoxyReturn}
+
+
+Definido na linha 200 do ficheiro Inscricoes\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a4ff18bda5e432b3ffb914f8e3e5413eb}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a4ff18bda5e432b3ffb914f8e3e5413eb}} 
+\index{MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}!Details@{Details}}
+\index{Details@{Details}!MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}}
+\doxysubsubsection{\texorpdfstring{Details()}{Details()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Inscricoes\+Controller.\+Details (\begin{DoxyParamCaption}\item[{int?}]{id }\end{DoxyParamCaption})}
+
+
+
+Definido na linha 43 do ficheiro Inscricoes\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a16a8f415833aa1876c21d3d328054ba0}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a16a8f415833aa1876c21d3d328054ba0}} 
+\index{MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}!Edit@{Edit}}
+\index{Edit@{Edit}!MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}}
+\doxysubsubsection{\texorpdfstring{Edit()}{Edit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Inscricoes\+Controller.\+Edit (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{[}\+Bind(\char`\"{}\+ID,\+Data\+Inscrição,\+Voluntario\+ID,\+Evento\+ID\char`\"{})\mbox{]} \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_inscricao}{Inscricao}}}]{inscricao }\end{DoxyParamCaption})}
+
+
+
+POST\+: Inscricoes/\+Edit Método que edita objeto do tipo Inscricao que se encontra na BD e atualiza a BD To protect from overposting attacks, enable the specific properties you want to bind to. For more details, see \href{http://go.microsoft.com/fwlink/?LinkId=317598}{\texttt{ http\+://go.\+microsoft.\+com/fwlink/?\+Link\+Id=317598}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & id de objeto a ser alterado\\
+\hline
+{\em inscricao} & objeto da classe Inscricao editado no Formulário\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+View Edit com o objeto editado
+\end{DoxyReturn}
+
+
+Definido na linha 137 do ficheiro Inscricoes\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a398e508cfa4c8c886bde1543141f880a}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a398e508cfa4c8c886bde1543141f880a}} 
+\index{MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}!Edit@{Edit}}
+\index{Edit@{Edit}!MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}}
+\doxysubsubsection{\texorpdfstring{Edit()}{Edit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Inscricoes\+Controller.\+Edit (\begin{DoxyParamCaption}\item[{int?}]{id }\end{DoxyParamCaption})}
+
+
+
+Método que devolve a view Editar do objeto seleccionado da classe Inscricao que se encontra em BD 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em id} & ID do objeto escolhido para editar\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+devolve view Edit com formulário para editar o objeto selecionado
+\end{DoxyReturn}
+
+
+Definido na linha 110 do ficheiro Inscricoes\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_ab42dd6ae6e3c42b228bdb05abda5cd3c}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_ab42dd6ae6e3c42b228bdb05abda5cd3c}} 
+\index{MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}!Index@{Index}}
+\index{Index@{Index}!MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}}
+\doxysubsubsection{\texorpdfstring{Index()}{Index()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ MVC\+\_\+\+MBQ.\+Controllers.\+Inscricoes\+Controller.\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método da view Index referente ao modelo Inscricao 
+
+\begin{DoxyReturn}{Retorna}
+devolve view com lista de inscrições realizadas e presentes em BD
+\end{DoxyReturn}
+summary$>$ Método que permite ler todos os detalhes de objeto da classe Inscricao, selecionado em view, cujos dados estão guardados em BD /summary$>$ param name=\char`\"{}id\char`\"{}$>$ID do objeto da classe Inscricao guardado em BD
+
+returns$>$devolve view com todos os detalhes de um ID selecionado presente em BD
+
+Definido na linha 32 do ficheiro Inscricoes\+Controller.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a8e277d47e83ccd7b650d7039528a8c0e}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a8e277d47e83ccd7b650d7039528a8c0e}} 
+\index{MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}!InscricaoExists@{InscricaoExists}}
+\index{InscricaoExists@{InscricaoExists}!MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}}
+\doxysubsubsection{\texorpdfstring{InscricaoExists()}{InscricaoExists()}}
+{\footnotesize\ttfamily bool MVC\+\_\+\+MBQ.\+Controllers.\+Inscricoes\+Controller.\+Inscricao\+Exists (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definido na linha 208 do ficheiro Inscricoes\+Controller.\+cs.
+
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a91c25b46d1cde27fe9d00a32265a619d}\label{class_m_v_c___m_b_q_1_1_controllers_1_1_inscricoes_controller_a91c25b46d1cde27fe9d00a32265a619d}} 
+\index{MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}!\_context@{\_context}}
+\index{\_context@{\_context}!MVC\_MBQ.Controllers.InscricoesController@{MVC\_MBQ.Controllers.InscricoesController}}
+\doxysubsubsection{\texorpdfstring{\_context}{\_context}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}} MVC\+\_\+\+MBQ.\+Controllers.\+Inscricoes\+Controller.\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definido na linha 18 do ficheiro Inscricoes\+Controller.\+cs.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/stduser/\+One\+Drive -\/ Instituto Politécnico de Setúbal/\+LW/\+Doc\+Tecnica\+\_\+dados/\+Controllers/\mbox{\hyperlink{_inscricoes_controller_8cs}{Inscricoes\+Controller.\+cs}}\end{DoxyCompactItemize}

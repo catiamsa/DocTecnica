@@ -1,0 +1,226 @@
+\hypertarget{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{}\doxysection{Referência à classe MVC\+\_\+\+MBQ.\+Models.\+App\+Movimento\+BQDb\+Context}
+\label{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}\index{MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}}
+
+
+Classe \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}} que herda da classe Db\+Context. Permite Mapear a BD  
+
+
+Diagrama de heranças da classe MVC\+\_\+\+MBQ.\+Models.\+App\+Movimento\+BQDb\+Context\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_af8998cc122733a2fc068abf84978d687}{App\+Movimento\+BQDb\+Context}} (Db\+Context\+Options$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}} $>$ options)
+\begin{DoxyCompactList}\small\item\em Detalhes de configuração de BD, para BD funcionar é importante inserir a string para BD SQL no appsettings.\+json, e o contexto no startup.\+cs\+: \href{https://docs.microsoft.com/pt-pt/ef/core/cli/dbcontext-creation?tabs=vs}{\texttt{ https\+://docs.\+microsoft.\+com/pt-\/pt/ef/core/cli/dbcontext-\/creation?tabs=vs}}. Para fazer migration/update é necessário especificar o DBcontext. Add-\/\+Migration Initial\+Create -\/Context \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}} Update-\/\+Database -\/Context \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membros protegidos}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_ad408f2ef57f719feef233bc56159cd37}{On\+Model\+Creating}} (Model\+Builder model\+Builder)
+\begin{DoxyCompactList}\small\item\em Método que faz o populate da Base de Dados \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Propriedades}
+\begin{DoxyCompactItemize}
+\item 
+Db\+Set$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_categoria}{Categoria}} $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_af01bcabe1b5da21f598237fd2ec0a033}{Categorias}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Db\+Set$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_voluntario}{Voluntario}} $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a8186ff4bce25be8f269111efc97dd7d4}{Voluntarios}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Db\+Set$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_evento}{Evento}} $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a490f25670651f7839fd192fb8bd416eb}{Eventos}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Db\+Set$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_familia}{Familia}} $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_ad46d8af8618f586f9aab495967f709de}{Familias}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Db\+Set$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_produto}{Produto}} $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a86782c81c984469665d7cbd8fb9d9b28}{Produtos}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Db\+Set$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_membro_familia}{Membro\+Familia}} $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a7a3c29e44169759ffa90a336bdbdcfa2}{Membro\+Familias}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Db\+Set$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_inscricao}{Inscricao}} $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a4f6efcaa3a013ee907ae44d5633f44e6}{Inscricoes}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Db\+Set$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_produto_entregue}{Produto\+Entregue}} $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a55cb2bc22eab274263af4901af55c929}{Produtos\+Entregues}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Db\+Set$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_produto_doado}{Produto\+Doado}} $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_abe7cb613453d61b766f779d56aa5c432}{Produtos\+Doados}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Db\+Set$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_entrega_familia}{Entrega\+Familia}} $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a331012af0bc9e8f04fae2ae87778d0ae}{Entrega\+Familias}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Db\+Set$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_doacao}{Doacao}} $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a7df06cff39c638bd08a52719b29d7f27}{Doacoes}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Db\+Set$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_newsletter}{Newsletter}} $>$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a808069cf0a8f44a9de201458050334ab}{Newsletters}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}} que herda da classe Db\+Context. Permite Mapear a BD 
+
+
+
+Definido na linha 12 do ficheiro App\+Movimento\+BQDb\+Context.\+cs.
+
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_af8998cc122733a2fc068abf84978d687}\label{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_af8998cc122733a2fc068abf84978d687}} 
+\index{MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}!AppMovimentoBQDbContext@{AppMovimentoBQDbContext}}
+\index{AppMovimentoBQDbContext@{AppMovimentoBQDbContext}!MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}}
+\doxysubsubsection{\texorpdfstring{AppMovimentoBQDbContext()}{AppMovimentoBQDbContext()}}
+{\footnotesize\ttfamily MVC\+\_\+\+MBQ.\+Models.\+App\+Movimento\+BQDb\+Context.\+App\+Movimento\+BQDb\+Context (\begin{DoxyParamCaption}\item[{Db\+Context\+Options$<$ \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}} $>$}]{options }\end{DoxyParamCaption})}
+
+
+
+Detalhes de configuração de BD, para BD funcionar é importante inserir a string para BD SQL no appsettings.\+json, e o contexto no startup.\+cs\+: \href{https://docs.microsoft.com/pt-pt/ef/core/cli/dbcontext-creation?tabs=vs}{\texttt{ https\+://docs.\+microsoft.\+com/pt-\/pt/ef/core/cli/dbcontext-\/creation?tabs=vs}}. Para fazer migration/update é necessário especificar o DBcontext. Add-\/\+Migration Initial\+Create -\/Context \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}} Update-\/\+Database -\/Context \mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context}{App\+Movimento\+BQDb\+Context}} 
+
+
+
+Definido na linha 20 do ficheiro App\+Movimento\+BQDb\+Context.\+cs.
+
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_ad408f2ef57f719feef233bc56159cd37}\label{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_ad408f2ef57f719feef233bc56159cd37}} 
+\index{MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}!OnModelCreating@{OnModelCreating}}
+\index{OnModelCreating@{OnModelCreating}!MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}}
+\doxysubsubsection{\texorpdfstring{OnModelCreating()}{OnModelCreating()}}
+{\footnotesize\ttfamily override void MVC\+\_\+\+MBQ.\+Models.\+App\+Movimento\+BQDb\+Context.\+On\+Model\+Creating (\begin{DoxyParamCaption}\item[{Model\+Builder}]{model\+Builder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Método que faz o populate da Base de Dados 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em model\+Builder} & objeto do tipo Model\+Builder \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha 78 do ficheiro App\+Movimento\+BQDb\+Context.\+cs.
+
+
+
+\doxysubsection{Documentação das propriedades}
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_af01bcabe1b5da21f598237fd2ec0a033}\label{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_af01bcabe1b5da21f598237fd2ec0a033}} 
+\index{MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}!Categorias@{Categorias}}
+\index{Categorias@{Categorias}!MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}}
+\doxysubsubsection{\texorpdfstring{Categorias}{Categorias}}
+{\footnotesize\ttfamily Db\+Set$<$\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_categoria}{Categoria}}$>$ MVC\+\_\+\+MBQ.\+Models.\+App\+Movimento\+BQDb\+Context.\+Categorias\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+Propriedade Db\+Set que guarda repositório de Categorias 
+
+Definido na linha 27 do ficheiro App\+Movimento\+BQDb\+Context.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a7df06cff39c638bd08a52719b29d7f27}\label{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a7df06cff39c638bd08a52719b29d7f27}} 
+\index{MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}!Doacoes@{Doacoes}}
+\index{Doacoes@{Doacoes}!MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}}
+\doxysubsubsection{\texorpdfstring{Doacoes}{Doacoes}}
+{\footnotesize\ttfamily Db\+Set$<$\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_doacao}{Doacao}}$>$ MVC\+\_\+\+MBQ.\+Models.\+App\+Movimento\+BQDb\+Context.\+Doacoes\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+Propriedade Db\+Set que guarda repositório de Doações 
+
+Definido na linha 67 do ficheiro App\+Movimento\+BQDb\+Context.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a331012af0bc9e8f04fae2ae87778d0ae}\label{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a331012af0bc9e8f04fae2ae87778d0ae}} 
+\index{MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}!EntregaFamilias@{EntregaFamilias}}
+\index{EntregaFamilias@{EntregaFamilias}!MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}}
+\doxysubsubsection{\texorpdfstring{EntregaFamilias}{EntregaFamilias}}
+{\footnotesize\ttfamily Db\+Set$<$\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_entrega_familia}{Entrega\+Familia}}$>$ MVC\+\_\+\+MBQ.\+Models.\+App\+Movimento\+BQDb\+Context.\+Entrega\+Familias\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+Propriedade Db\+Set que guarda repositório de Entregas realizadas a Famílias 
+
+Definido na linha 63 do ficheiro App\+Movimento\+BQDb\+Context.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a490f25670651f7839fd192fb8bd416eb}\label{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a490f25670651f7839fd192fb8bd416eb}} 
+\index{MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}!Eventos@{Eventos}}
+\index{Eventos@{Eventos}!MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}}
+\doxysubsubsection{\texorpdfstring{Eventos}{Eventos}}
+{\footnotesize\ttfamily Db\+Set$<$\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_evento}{Evento}}$>$ MVC\+\_\+\+MBQ.\+Models.\+App\+Movimento\+BQDb\+Context.\+Eventos\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+Propriedade Db\+Set que guarda repositório de Eventos 
+
+Definido na linha 35 do ficheiro App\+Movimento\+BQDb\+Context.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_ad46d8af8618f586f9aab495967f709de}\label{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_ad46d8af8618f586f9aab495967f709de}} 
+\index{MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}!Familias@{Familias}}
+\index{Familias@{Familias}!MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}}
+\doxysubsubsection{\texorpdfstring{Familias}{Familias}}
+{\footnotesize\ttfamily Db\+Set$<$\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_familia}{Familia}}$>$ MVC\+\_\+\+MBQ.\+Models.\+App\+Movimento\+BQDb\+Context.\+Familias\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+Propriedade Db\+Set que guarda repositório de Familias 
+
+Definido na linha 39 do ficheiro App\+Movimento\+BQDb\+Context.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a4f6efcaa3a013ee907ae44d5633f44e6}\label{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a4f6efcaa3a013ee907ae44d5633f44e6}} 
+\index{MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}!Inscricoes@{Inscricoes}}
+\index{Inscricoes@{Inscricoes}!MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}}
+\doxysubsubsection{\texorpdfstring{Inscricoes}{Inscricoes}}
+{\footnotesize\ttfamily Db\+Set$<$\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_inscricao}{Inscricao}}$>$ MVC\+\_\+\+MBQ.\+Models.\+App\+Movimento\+BQDb\+Context.\+Inscricoes\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+Propriedade Db\+Set que guarda repositório de Inscrições 
+
+Definido na linha 51 do ficheiro App\+Movimento\+BQDb\+Context.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a7a3c29e44169759ffa90a336bdbdcfa2}\label{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a7a3c29e44169759ffa90a336bdbdcfa2}} 
+\index{MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}!MembroFamilias@{MembroFamilias}}
+\index{MembroFamilias@{MembroFamilias}!MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}}
+\doxysubsubsection{\texorpdfstring{MembroFamilias}{MembroFamilias}}
+{\footnotesize\ttfamily Db\+Set$<$\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_membro_familia}{Membro\+Familia}}$>$ MVC\+\_\+\+MBQ.\+Models.\+App\+Movimento\+BQDb\+Context.\+Membro\+Familias\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+Propriedade Db\+Set que guarda repositório de Membros de Familias 
+
+Definido na linha 47 do ficheiro App\+Movimento\+BQDb\+Context.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a808069cf0a8f44a9de201458050334ab}\label{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a808069cf0a8f44a9de201458050334ab}} 
+\index{MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}!Newsletters@{Newsletters}}
+\index{Newsletters@{Newsletters}!MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}}
+\doxysubsubsection{\texorpdfstring{Newsletters}{Newsletters}}
+{\footnotesize\ttfamily Db\+Set$<$\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_newsletter}{Newsletter}}$>$ MVC\+\_\+\+MBQ.\+Models.\+App\+Movimento\+BQDb\+Context.\+Newsletters\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+Propriedade Db\+Set que guarda repositório de dados referentes a Newsletters 
+
+Definido na linha 71 do ficheiro App\+Movimento\+BQDb\+Context.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a86782c81c984469665d7cbd8fb9d9b28}\label{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a86782c81c984469665d7cbd8fb9d9b28}} 
+\index{MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}!Produtos@{Produtos}}
+\index{Produtos@{Produtos}!MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}}
+\doxysubsubsection{\texorpdfstring{Produtos}{Produtos}}
+{\footnotesize\ttfamily Db\+Set$<$\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_produto}{Produto}}$>$ MVC\+\_\+\+MBQ.\+Models.\+App\+Movimento\+BQDb\+Context.\+Produtos\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+Propriedade Db\+Set que guarda repositório de Produtos 
+
+Definido na linha 43 do ficheiro App\+Movimento\+BQDb\+Context.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_abe7cb613453d61b766f779d56aa5c432}\label{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_abe7cb613453d61b766f779d56aa5c432}} 
+\index{MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}!ProdutosDoados@{ProdutosDoados}}
+\index{ProdutosDoados@{ProdutosDoados}!MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}}
+\doxysubsubsection{\texorpdfstring{ProdutosDoados}{ProdutosDoados}}
+{\footnotesize\ttfamily Db\+Set$<$\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_produto_doado}{Produto\+Doado}}$>$ MVC\+\_\+\+MBQ.\+Models.\+App\+Movimento\+BQDb\+Context.\+Produtos\+Doados\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+Propriedade Db\+Set que guarda repositório de Produtos Doados 
+
+Definido na linha 59 do ficheiro App\+Movimento\+BQDb\+Context.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a55cb2bc22eab274263af4901af55c929}\label{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a55cb2bc22eab274263af4901af55c929}} 
+\index{MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}!ProdutosEntregues@{ProdutosEntregues}}
+\index{ProdutosEntregues@{ProdutosEntregues}!MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}}
+\doxysubsubsection{\texorpdfstring{ProdutosEntregues}{ProdutosEntregues}}
+{\footnotesize\ttfamily Db\+Set$<$\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_produto_entregue}{Produto\+Entregue}}$>$ MVC\+\_\+\+MBQ.\+Models.\+App\+Movimento\+BQDb\+Context.\+Produtos\+Entregues\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+Propriedade Db\+Set que guarda repositório de Produtos Entregues 
+
+Definido na linha 55 do ficheiro App\+Movimento\+BQDb\+Context.\+cs.
+
+\mbox{\Hypertarget{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a8186ff4bce25be8f269111efc97dd7d4}\label{class_m_v_c___m_b_q_1_1_models_1_1_app_movimento_b_q_db_context_a8186ff4bce25be8f269111efc97dd7d4}} 
+\index{MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}!Voluntarios@{Voluntarios}}
+\index{Voluntarios@{Voluntarios}!MVC\_MBQ.Models.AppMovimentoBQDbContext@{MVC\_MBQ.Models.AppMovimentoBQDbContext}}
+\doxysubsubsection{\texorpdfstring{Voluntarios}{Voluntarios}}
+{\footnotesize\ttfamily Db\+Set$<$\mbox{\hyperlink{class_m_v_c___m_b_q_1_1_models_1_1_voluntario}{Voluntario}}$>$ MVC\+\_\+\+MBQ.\+Models.\+App\+Movimento\+BQDb\+Context.\+Voluntarios\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+Propriedade Db\+Set que guarda repositório de Voluntarios 
+
+Definido na linha 31 do ficheiro App\+Movimento\+BQDb\+Context.\+cs.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/stduser/\+One\+Drive -\/ Instituto Politécnico de Setúbal/\+LW/\+Doc\+Tecnica\+\_\+dados/\+Models/\mbox{\hyperlink{_app_movimento_b_q_db_context_8cs}{App\+Movimento\+BQDb\+Context.\+cs}}\end{DoxyCompactItemize}
